@@ -1,6 +1,5 @@
 #! /usr/bin/env python
 #-*- coding:utf-8 -*-
- 
 import json
 
 js = {"haha": "哈哈"}
