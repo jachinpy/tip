@@ -8,4 +8,3 @@ md = hashlib.md5("client_id=client_secret")
 md = md.hexdigest()
 print md
 base64.b64encode("client_id:client_secret")
-
