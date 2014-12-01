@@ -1,9 +1,8 @@
 #conding=utf-8
-#filename = test system mysql-database
 import MySQLdb
 
 
-class Model:
+class Model(object):
     host = ""
     user = ""
     passwd = ""
@@ -16,8 +15,8 @@ class Model:
         self.user = user
         self.passwd = passwd
         self.db = db
-        conn = MySQLdb.connect(host=self.host, 
-                                user=self.user, 
+        conn = MySQLdb.connect(host=self.host,
+                                user=self.user,
                                 passwd=self.passwd
                                 )
         self.cursor = conn.cursor()
