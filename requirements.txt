@@ -1,3 +1,4 @@
+BeautifulSoup==3.2.1
 argparse==1.2.1
 selenium==2.44.0
 splinter==0.6.0
