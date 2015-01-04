@@ -1,0 +1,50 @@
+#plugins=(git git-flow git-extras emacs python)
+#eg. up
+
+# history size.
+export HISTSIZE=1000
+# logout after save history size.
+export SAVEHIST=1000
+# history file
+#export HISTFILE=~/.zhistory
+# ">>" add to file
+setopt INC_APPEND_HISTORY
+# if history command same, save one.
+#setopt HIST_IGNORE_DUPS      
+# history command with timestamp.
+setopt EXTENDED_HISTORY
+
+# keyboard set swap caps lock and ctrl.
+#setxkbmap -option ctrl:swapcaps     # Swap Left Control and Caps Lock
+#setxkbmap -option ctrl:nocaps       # Make Caps Lock a Control key
+
+# cabal update and install pandoc for markdown to html and so on.
+export PATH=/home/jachin/.cabal/bin:$PATH
+
+# set zh_CN env for locale china. 
+export LC_CTYPE="zh_CN.UTF-8"
+
+hash -d Scriptpy=/home/jachin/Documents/script/Scriptpy
+hash -d note=/home/jachin/Documents/notepad/
+
+# display process for "python and Django", and so on.
+alias pjr="ps gaux | grep runserver | grep -v grep | awk '{print $2}'"
+
+# Django 
+alias jsp='python manage.py shell_plus'
+alias jr='python manage.py runserver '
+alias jt="python manage.py test "
+
+#alias sg='~/Downloads/smartgithg-6_0_4/bin/smartgithg.sh'
+
+# evernote sync from email
+alias plain='/home/jachin/Documents/project/soplain/plain.py'
+
+alias gh="git hist"
+alias ghh="git hist --max-count=1"
+alias gfp="git fetch -p"
+alias gffs="git flow feature start "
+alias gcfp="git cat-file -p "
+alias gcft="git cat-file -t "
+alias gcto="git checkout --track origin "
+

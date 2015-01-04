@@ -4,11 +4,11 @@ import shutil
 import sys
 
 
-def win_mv(src, dst):
+def dired_file_move(src, dst):
     print shutil.copytree(src, dst)
     return "Moving OK"
 
 if __name__ == "__main__":
     src = sys.argv[1]
     dst = sys.argv[2]
-    print win_mv(src, dst)
+    print dired_file_move(src, dst)

@@ -18,5 +18,4 @@ def fab1(max):
         a, b = b, a + b
         n = n + 1
 fab(5)
-
 print fab1(5)
