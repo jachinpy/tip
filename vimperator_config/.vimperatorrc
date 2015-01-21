@@ -8,13 +8,37 @@ source! /home/jachin/.vimperatorrc.local
 " leader key
 "map , <Leader>
 
+"display bookmarks set B.
+:map B :dia bookmarks<CR>
+
+"switch tabs
+noremap q gT
+noremap w gt
+
+"quick page
+noremap j 3j
+noremap k 3k
+
+"collect status always 'a'.
+noremap a A
+
+"tab numbers 
+set tabnumbers
+
+highlight Hint font: bold 15px "Droid Sans Mono", monospace !important;
+margin:-.2ex;padding: 0 0 0 1px; outline: 1px solid rgba(0, 0, 0, .5); 
+background: rgba(255, 248, 231, .8);
+color: red; 
+text-transform: lowercase;
+:set hc=hjklasdgyuiopqwertnmzxcvb
+
 noremap <leader>fy :tabopen http://fanyi.youdao.com/<CR>
 noremap <leader>gf :tabopen http://www.gfsoso.com/<CR>
 noremap <leader>tb :tabopen http://www.baidu.com/<CR>
-noremap <leader>ev :tabopen https://app.yinxiang.com/Home.action <CR>
+noremap <leader>ev :tabopen https://app.yinxiang.com/Home.action<CR>
+noremap <leader>gh :tabopen http://github.com<CR>
 
 set nextpattern=\s*下一页|下一张|下一篇|下页|后页\s*,^\bnext\b,\\bnext\\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\\bmore\\b
-
 set previouspattern=\s*上一页|上一张|上一篇|上页|前页\s*,^\bprev|previous\b,\\bprev|previous\\b,^<$,^(<<|«)$,^(<|«),(<|«)$
 
 js <<EOF
