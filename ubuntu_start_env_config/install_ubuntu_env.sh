@@ -36,11 +36,10 @@ echo "complete!"
 echo "=================Next python develop===================="
 echo "install PIP"
 sudo apt-get install python-pip
-echo "completed!"
 
 
 echo "install Virtualenv"
-pip install virtualenv
+sudo apt-get install python-virtualenv
 sudo pip install virtualenvwrapper
 echo source /usr/local/bin/virtualenvwrapper.sh >> ~/.zshrc
 echo "virtualenv completed!"
@@ -62,11 +61,6 @@ sudo apt-get build-dep python-lxml
 echo "complete!"
 echo "answer IOError: decoder jpeg not available."
 sudo apt-get install libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms1-dev
-echo "complete!"
-
-echo "add mozilla for firefox."
-cat hosts.txt >> /etc/hosts
-echo "complete!"
 
 echo "add script for .zshrc"
 cat zshrc.txt >> ~/.zshrc
