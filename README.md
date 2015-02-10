@@ -1,12 +1,22 @@
 tip
 ========
 
-version  ubuntu 12.04 or better.
+ubuntu 12.04 | 14.04 or better version.
 
-安装ubuntu 12.04 or + 开发环境， 可执行
+##Plan
 
-```python
-	./cfg/install_ubuntu_env.sh
+- initial ubuntu env.
+- develoop tool
+- system tool
+- configuration shell
 
-```
+
+#### first
+	sudo apt-get install git
+
+#### second
+
+	git clone https://github.com/jachinpy/tip.git 
+	cd $MYPATH
+	./install_ubuntu_env.sh (chmod a+x install_ubuntu_env.sh)
 
