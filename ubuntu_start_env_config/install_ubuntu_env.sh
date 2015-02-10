@@ -37,4 +37,8 @@ sudo apt-get install libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms1-dev
 cat zshrc.txt >> ~/.zshrc
 echo "fix ~/.zshrc Ok!"
 
+echo "=============================other======================================="
+sudo apt-get install tmux
+# ~/.zshrc plugin = (tmux) to be open.
+
 echo "==============Now, restart computer======================"
