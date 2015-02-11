@@ -40,5 +40,6 @@ echo "fix ~/.zshrc Ok!"
 echo "=============================other======================================="
 sudo apt-get install tmux
 # ~/.zshrc plugin = (tmux) to be open.
+git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
 
 echo "==============Now, restart computer======================"
