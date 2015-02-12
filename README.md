@@ -3,7 +3,7 @@ tip
 
 ubuntu 12.04 | 14.04 or better version.
 
-##Plan
+#### plan
 
 - initial ubuntu env.
 - develoop tool

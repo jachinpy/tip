@@ -9,25 +9,19 @@ cp ~/.zshrc ~/.zshrc.orig
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 chsh -s /bin/zsh
 
-sudo apt-get install git
-sudo apt-get install gitk
-sudo apt-get install git-flow
-sudo apt-get install kdiff3
+sudo apt-get install git gitk git-flow kdiff3
 
 echo "========================Mysql========================"
-sudo apt-get install mysql-server
-sudo apt-get install mysql-client
+sudo apt-get install mysql-server mysql-client
 
 echo "=================Next python develop===================="
-sudo apt-get install python-pip
-sudo apt-get install python-virtualenv
+sudo apt-get install python-pip ipython  python-virtualenv
 sudo pip install virtualenvwrapper
 echo source /usr/local/bin/virtualenvwrapper.sh >> ~/.zshrc
-
 sudo apt-get install emacs24
-sudo apt-get install ipython
+sduo apt-get install global
 
-echo "====================FAQ=================================="
+echo "====================fix ubuntu python develop(no package)=================================="
 echo "for mysql install libmysqlclient-dev"
 sudo apt-get install libmysqlclient-dev
 sudo apt-get build-dep python-lxml
@@ -42,5 +36,11 @@ sudo apt-get install tmux
 # ~/.zshrc plugin = (tmux) to be open.
 cp tmux.conf ~/.tmux.conf
 git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
+
+echo "=======================ubuntu gnome======================================"
+sudo apt-get install gnome-tweak-tool ubuntu-tweak-tool
+sudo apt-get install libnotify-bin
+
+notify-send "ubuntu python develop environment done. :)"
 
 echo "==============Now, restart computer======================"
