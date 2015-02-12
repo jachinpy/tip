@@ -20,3 +20,8 @@ ubuntu 12.04 | 14.04 or better version.
 	cd $MYPATH
 	./install_ubuntu_env.sh (chmod a+x install_ubuntu_env.sh)
 
+#### feature
+
+	install qq
+	wget http://pan.baidu.com/s/1kTHvwTx
+	./install_qq.sh
