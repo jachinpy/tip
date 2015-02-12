@@ -37,8 +37,12 @@ sudo apt-get install tmux
 cp tmux.conf ~/.tmux.conf
 git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
 
+echo "=============================browser==========================="
+sudo apt-get install chromium-browser
+
 echo "=======================ubuntu gnome======================================"
 sudo apt-get install gnome-tweak-tool ubuntu-tweak-tool
+sudo apt-get install silversearcher-ag
 sudo apt-get install libnotify-bin
 
 notify-send "ubuntu python develop environment done. :)"
