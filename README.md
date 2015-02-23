@@ -1,9 +1,10 @@
-tip
+Tip
 ========
 
 ubuntu 12.04 | 14.04 or better version.
 
-#### plan
+
+#### Goal
 
 - initial ubuntu env.
 - develoop tool
@@ -11,16 +12,22 @@ ubuntu 12.04 | 14.04 or better version.
 - configuration shell
 
 
-#### first
+#### Setup
+
 	sudo apt-get install git
-
-#### second
-
 	git clone https://github.com/jachinpy/tip.git
 	cd $MYPATH
 	./install_ubuntu_env.sh (chmod a+x install_ubuntu_env.sh)
 
-#### feature
+#### Feature
 
-	install qq
-	./install_qq.sh
+	install linux qq.
+	    ./install_qq.sh
+
+    install goto python2.7 site-packages.
+        add .zshrc
+
+        '''bash
+        source $HOME/path/to/tip/gositepackages.sh
+        '''
+

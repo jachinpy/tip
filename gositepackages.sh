@@ -1,6 +1,6 @@
 #!/bin/sh
 
-gosite () {
+sitep () {
     if [[ $? -eq 0 ]]
         then
         cd $VIRTUAL_ENV/lib/python2.7/site-packages
