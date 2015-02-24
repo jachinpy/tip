@@ -1,10 +1,13 @@
 #!/bin/sh
 
+
 sitep () {
-    if [[ $? -eq 0 ]]
+    local arg="$1"
+    if [ $# -eq 1 ]
         then
+        var_site=$(find ~/.virtualenvs -iname "site-packages" | grep $arg)
+        cd $var_site
+    else
         cd $VIRTUAL_ENV/lib/python2.7/site-packages
-    return 1
     fi
-    cd $HOME/.virtualenvs/$1/lib/python2.7/site-packages
 }

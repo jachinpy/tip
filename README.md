@@ -24,10 +24,23 @@ ubuntu 12.04 | 14.04 or better version.
 	install linux qq.
 	    ./install_qq.sh
 
-    install goto python2.7 site-packages.
+    install goto python2.7 site-packages for projects.
         add .zshrc
 
-        '''bash
+        """bash
         source $HOME/path/to/tip/gositepackages.sh
-        '''
-
+        """
+        
+        use sitep command in shell.
+        sitep [virutalenv name]
+            if you in virutalenv. You can use it by itself.
+            for eg.
+        
+        """bash
+            workon exmaple
+            (example)~ sitep
+        """
+        or
+        """bash
+            ~ sitep exmaple
+        """
