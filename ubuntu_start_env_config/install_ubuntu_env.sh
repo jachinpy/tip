@@ -40,6 +40,9 @@ git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
 echo "=============================browser==========================="
 sudo apt-get install chromium-browser
 
+echo "+++++++++++++++++++++++input method=========================="
+sudo apt-get install ibus-googlepinyin
+
 echo "=======================ubuntu gnome======================================"
 sudo apt-get install gnome-tweak-tool ubuntu-tweak-tool
 sudo apt-get install silversearcher-ag
