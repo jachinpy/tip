@@ -21,5 +21,6 @@ sudo apt-get install ibus-googlepinyin
 sudo apt-get install gnome-tweak-tool ubuntu-tweak-tool libnotify-bin
 sudo apt-get install curl
 sudo apt-get install silversearcher-ag
+source ./python_develop_tool.sh
 
 echo "==============Now, restart computer======================"

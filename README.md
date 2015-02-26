@@ -49,3 +49,7 @@ ubuntu 12.04 | 14.04 or better version.
         or use:
         
             ~ sitep exmaple
+
+    install scbl for emacs.
+
+        ./scbl.sh
