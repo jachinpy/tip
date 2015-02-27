@@ -50,6 +50,6 @@ ubuntu 12.04 | 14.04 or better version.
         
             ~ sitep exmaple
 
-    install scbl for emacs.
 
+    install scbl for emacs.
         ./scbl.sh
