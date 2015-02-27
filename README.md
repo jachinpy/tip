@@ -15,11 +15,11 @@ ubuntu 12.04 | 14.04 or better version.
 #### Setup
 
     start initial simple
-    
+
 	    sudo apt-get install git
 	    git clone https://github.com/jachinpy/tip.git
-	    cd $MYPATH
-	    ./install_ubuntu_env.sh (chmod a+x install_ubuntu_env.sh)
+	    cd path/to/ubuntu_start_env_config
+        ./start_setup.sh (if False, do chmod a+x start_setup.sh)
 
 #### Feature
 
@@ -35,19 +35,19 @@ ubuntu 12.04 | 14.04 or better version.
 
         source $HOME/path/to/tip/gositepackages.sh
 
-        
+
         use sitep command in shell.
         sitep [virutalenv name]
             if you in virutalenv. You can use it by itself.
             for eg.
 
         if you have virtualenvwrapper.
-        
+
             workon exmaple
             (example)~ sitep
-            
+
         or use:
-        
+
             ~ sitep exmaple
 
 
