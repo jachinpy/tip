@@ -90,10 +90,12 @@ function go_github(args){
          }
          liberator.execute("topen "+url+"search?q="+searcharray[0]);
 }
+
 EOF
 
 command! test js hello_world();
-
+command! webdev js DeveloperToolbar.toggle();
+;;command! firebug js firebug.previousPlacement=1
 command! flashtoggle :js toggle_flash()
 nnoremap <C-F> :flashtoggle<CR>
 
