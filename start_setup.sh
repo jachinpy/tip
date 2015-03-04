@@ -7,7 +7,7 @@ sag () {
 
 sag zsh git gitk git-flow kdiff3 tmux chromium-browser ibus-googlepinyin\
      gnome-tweak-tool ubuntu-tweak-tool libnotify-bin curl\
-     silversearcher-ag
+     silversearcher-ag byobu
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.zshrc ~/.zshrc.orig

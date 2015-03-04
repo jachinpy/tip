@@ -18,7 +18,6 @@ ubuntu 12.04 | 14.04 or better version.
 
 	    sudo apt-get install git
 	    git clone https://github.com/jachinpy/tip.git
-	    cd path/to/ubuntu_start_env_config
         ./start_setup.sh (if False, do chmod a+x start_setup.sh)
 
 #### Feature
