@@ -107,7 +107,7 @@ command! bing js bing_search_keyword();
 command! gfsoso -nargs=* topen http://www.gfsoso.com/?q=<args>
 command! evernote open https://app.yinxiang.com/Home.action
 command! searchcode -nargs=* https://searchcode.com/?q=<args>
-command! youdao -nargs=* topen fanyi.youdao.com/translate?i=<args>
+command! fanyi -nargs=* topen fanyi.youdao.com/translate?i=<args>
 command! stack -nargs=* topen http://stackoverflow.com/search?q=<args>
 command! github -nargs=* js go_github("<args>");
 command! code -nargs=* js go_gitlab("<args>");
