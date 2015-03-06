@@ -68,8 +68,8 @@ function go_gitlab(args){
          for (x in word){
              codearray.push(word[x]);
              }
-         if (codearray[0] == "-g"){
-            liberator.execute("topen "+url+codearray[1]+"/"+codearray[2]);
+         if (codearray.length == 2){
+            liberator.execute("topen "+url+codearray[0]+"/"+codearray[1]);
             return;
             }
          liberator.execute("topen "+url+"search?search="+codearray[0]);
@@ -84,8 +84,8 @@ function go_github(args){
          for (x in word){
              searcharray.push(word[x]);
          }
-         if (searcharray[0] == "-g"){
-            liberator.execute("topen "+url+searcharray[1]+"/"+searcharray[2]);
+         if (searcharray.length == 2){
+            liberator.execute("topen "+url+searcharray[0]+"/"+searcharray[1]);
             return;
          }
          liberator.execute("topen "+url+"search?q="+searcharray[0]);
@@ -95,7 +95,7 @@ EOF
 
 command! test js hello_world();
 command! webdev js DeveloperToolbar.toggle();
-;;command! firebug js firebug.previousPlacement=1
+"command! firebug js firebug.previousPlacement=1
 command! flashtoggle :js toggle_flash()
 nnoremap <C-F> :flashtoggle<CR>
 
@@ -107,10 +107,11 @@ command! bing js bing_search_keyword();
 command! gfsoso -nargs=* topen http://www.gfsoso.com/?q=<args>
 command! evernote open https://app.yinxiang.com/Home.action
 command! searchcode -nargs=* https://searchcode.com/?q=<args>
-command! youdao -nargs=* topen fanyi.youdao.com/translate?i=<args>
+command! fanyi -nargs=* topen fanyi.youdao.com/translate?i=<args>
 command! stack -nargs=* topen http://stackoverflow.com/search?q=<args>
 command! github -nargs=* js go_github("<args>");
 command! code -nargs=* js go_gitlab("<args>");
 command! baidu -nargs=* topen http://www.baidu.com/s?wd=<args>
+command! oschina topen http://git.oschina.net/
 
 map <C-w> :js search_box_go_bing() <CR>
