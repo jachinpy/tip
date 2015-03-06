@@ -12,3 +12,7 @@ extranet () {
 getallwebsite () {
     wget --random-wait -r -p -e robots=off -U mozilla '$1'
 }
+
+pythonserver () {
+    python -m SimpleHTTPServer 9090
+}
