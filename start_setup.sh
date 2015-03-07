@@ -16,11 +16,13 @@ chsh -s /bin/zsh
 
 cp tmux.conf ~/.tmux.conf
 git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
-source ./python_develop_tool.sh
+source python_develop_tool.sh
+source utils.sh
 
 # Swap caps_lock and control_R
 cp $HOME/.xprofile $HOME/.xprofile.orig
 cp xprofile $HOME/.xprofile
 cp Xmodmap $HOME/.Xmodmap
+
 
 echo "=====       please restart computer         ====="
