@@ -15,4 +15,6 @@ sag libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms1-dev
 cat zshrc.txt >> ~/.zshrc
 echo "fix ~/.zshrc Ok!"
 
+source gositepackages.sh
+
 notify-send "ubuntu python develop environment done. :)"

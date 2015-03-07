@@ -18,4 +18,9 @@ cp tmux.conf ~/.tmux.conf
 git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
 source ./python_develop_tool.sh
 
-echo "==============Now, restart computer======================"
+# Swap caps_lock and control_R
+cp $HOME/.xprofile $HOME/.xprofile.orig
+cp xprofile $HOME/.xprofile
+cp Xmodmap $HOME/.Xmodmap
+
+echo "=====       please restart computer         ====="
