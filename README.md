@@ -1,15 +1,15 @@
 Tip
 ========
 
-ubuntu 12.04 | 14.04 or better version.
+ubuntu 12.04 or 14.04
 
 
 ## Goal
 
-- initial ubuntu env.
+- initial ubuntu env
 - develoop tool
 - system tool
-- configuration shell
+- configuration more feature
 
 
 ## Setup
@@ -18,7 +18,7 @@ ubuntu 12.04 | 14.04 or better version.
 
 	    sudo apt-get install git
 	    git clone https://github.com/jachinpy/tip.git
-        ./start_setup.sh (if False, do chmod a+x start_setup.sh)
+        ./setup.sh (if False, do chmod a+x setup.sh)
 
 ## intro
 
@@ -27,7 +27,6 @@ ubuntu 12.04 | 14.04 or better version.
         swap caps_lock and contro_R
         python utils, eg. sitep
         
-    
 ## Feature
 
     This is you can customize install. nothing feature default.

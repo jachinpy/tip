@@ -5,3 +5,7 @@
 *.bak
 [#]*[#]
 .#*
+GTAGS
+GPATH
+GRTAGS
+GSYMS
