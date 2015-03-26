@@ -47,6 +47,15 @@ ubuntu 12.04 or 14.04
 
             ~ sitep exmaple
 
+## 改键
+    ibus 输入法框架不可以删除，ubuntu组件依赖。在此基础上
+    运行 gnome-tweak-tool 方法较好。
+    
+    Fcitx 输入法框架，需要使用 .Xmodmap 文件交换按键，并
+    将指令装入 .xprofile 中，以便开机执行。
+
+    .xkb 方法不适用于 fcitx 和 ibus 框架。
+
 ## plugins
 
     install scbl for emacs.
