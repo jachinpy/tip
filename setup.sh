@@ -1,13 +1,14 @@
 #!/bin/sh
 
 apt-get update
-sag () {
-    sudo apt-get install "$*"
-}
+sag () { sudo apt-get install "$*" }
 
 sag zsh git gitk git-flow kdiff3 tmux chromium-browser ibus-googlepinyin\
      gnome-tweak-tool ubuntu-tweak-tool libnotify-bin curl\
      silversearcher-ag byobu tree
+
+# sloved scrapy error.
+sag python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.zshrc ~/.zshrc.orig
