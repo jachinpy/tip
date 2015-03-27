@@ -43,7 +43,7 @@ ZSH_THEME="simple"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow git-extras emacs python tmux pip django)
+plugins=(git git-flow git-extras emacs python tmux pip django z gitignore)
 
 # User configuration
 
@@ -87,7 +87,7 @@ export SAVEHIST=1000
 # ">>" add to file
 setopt INC_APPEND_HISTORY
 # if history command same, save one.
-#setopt HIST_IGNORE_DUPS
+#setopt HIST_IGNORE_DUPS      
 # history command with timestamp.
 setopt EXTENDED_HISTORY
 
@@ -98,7 +98,7 @@ setopt EXTENDED_HISTORY
 # cabal update and install pandoc for markdown to html and so on.
 export PATH=/home/jachin/.cabal/bin:$PATH
 
-# set zh_CN env for locale china.
+# set zh_CN env for locale china. 
 export LC_CTYPE="zh_CN.UTF-8"
 
 hash -d note=/home/jachin/Documents/notepad/
@@ -106,37 +106,46 @@ hash -d note=/home/jachin/Documents/notepad/
 # display process for "python and Django", and so on.
 alias pj="ps gaux | grep runserver | grep -v grep | awk '{print $2}'"
 
-# Django
-alias jsp='python manage.py shell_plus'
-alias jr='python manage.py runserver '
-alias jt="python manage.py test "
-alias jd="python manage.py dbshell"
-alias jsy="python manage.py syncdb"
-
 # evernote sync from email
 alias plain='/home/jachin/Documents/project/soplain/plain.py'
 
-# git
-alias gh="git hist"
-alias ghh="git hist --max-count=1"
-alias gfp="git fetch -p"
-alias gffs="git flow feature start "
-alias gcfp="git cat-file -p "
-alias gcft="git cat-file -t "
-alias gcto="git checkout --track origin "
-
 export WORKON_HOME=$HOME/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
 source /usr/local/bin/virtualenvwrapper.sh
 
-export PATH=/home/jachin/.cabal/bin:/home/jachin/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/jachin/bin
-alias tnw="tmux new-windows"
-alias tlw="tmux list-windows"
-alias tsw="tmux select-windows -t"
-alias trw="tmux rename-window"
-alias tls="tmux ls"
-alias tlk="tmux list-keys"
-alias tlc="tmux list-commands"
-source ~/.tmux.conf
+# percol
+function ppgrep() {
+    if [[ $1 == "" ]]; then
+        PERCOL=percol
+    else
+        PERCOL="percol --query $1"
+    fi
+    ps aux | eval $PERCOL | awk '{ print $2 }'
+}
 
-alias tweak="unity-tweak-tool"
-source $HOME/project/tip/gositepackages.sh
+function ppkill() {
+    if [[ $1 =~ "^-" ]]; then
+        QUERY=""            # options only
+    else
+        QUERY=$1            # with a query
+        [[ $# > 0 ]] && shift
+    fi
+    ppgrep $QUERY | xargs kill $*
+}
+
+function exists { which $1 &> /dev/null }
+
+if exists percol; then
+    function percol_select_history() {
+        local tac
+        exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
+        BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
+        CURSOR=$#BUFFER         # move cursor
+        zle -R -c               # refresh
+    }
+
+    zle -N percol_select_history
+    bindkey '^R' percol_select_history
+fi
+
+source ~/project/tip/configuration.sh

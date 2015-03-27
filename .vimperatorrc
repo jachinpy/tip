@@ -113,5 +113,6 @@ command! github -nargs=* js go_github("<args>");
 command! code -nargs=* js go_gitlab("<args>");
 command! baidu -nargs=* topen http://www.baidu.com/s?wd=<args>
 command! oschina topen http://git.oschina.net/
+command! emacswiki topen http://emacswiki.org/
 
 map <C-w> :js search_box_go_bing() <CR>
