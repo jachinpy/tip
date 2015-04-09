@@ -22,7 +22,7 @@ cp ~/.zshrc ~/.zshrc.orig
 cp plugins/zsh/zshrc  ~/.zhsrc
 chsh -s /bin/zsh
 
-sudo pip install virtualenvwrapper percol
+sudo pip install virtualenvwrapper percol rash
 
 cp ./plugins/tmux/tmux.conf ~/.tmux.conf
 git clone https://github.com/jachinpy/emacs.d.git ~/.emacs.d
