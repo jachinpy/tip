@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 apt-get update
 sag () { sudo apt-get install "$*" }
@@ -16,6 +16,9 @@ emacs24 libmysqlclient-dev build-dep python-lxml　global
 # Solved IOError: decoder jpeg not available.
 sag libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms1-dev
 
+# themes
+sag dconf-cli
+git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.zshrc ~/.zshrc.orig
