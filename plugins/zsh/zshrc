@@ -43,7 +43,7 @@ ZSH_THEME="simple"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow git-extras emacs python tmux pip django z gitignore)
+plugins=(git git-flow git-extras emacs python tmux pip django z gitignore tmuxinator)
 
 # User configuration
 
@@ -100,6 +100,9 @@ export PATH=/home/jachin/.cabal/bin:$PATH
 
 # set zh_CN env for locale china. 
 export LC_CTYPE="zh_CN.UTF-8"
+
+# set editor env.
+export EDITOR='vim'
 
 hash -d note=/home/jachin/Documents/notepad/
 
@@ -173,7 +176,7 @@ function workongrep() {
     fi
     workon | eval $PERCOL
 }
-function work() {
+function wo() {
     if [[ $1 =~ "^-" ]]; then
         QUERY=""            # options only
     else
@@ -185,3 +188,4 @@ function work() {
 
 eval "$(rash init)"
 source ~/project/tip/configuration.sh
+source ~/.bin/tmuxinator.zsh

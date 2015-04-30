@@ -1,7 +1,7 @@
 #! /bin/bash
 
 
-array_pc=(django bash git python)
+array_pc=(django bash git python byobu tmux)
 
 PcPluginsConfig ()
 {
