@@ -28,6 +28,7 @@ chsh -s /bin/zsh
 sudo pip install virtualenvwrapper percol rash
 
 cp ./plugins/tmux/tmux.conf ~/.tmux.conf
+sudo gem install tmuxinator
 git clone https://github.com/jachinpy/emacs.d.git ~/.emacs.d
 
 # Swap caps_lock and control_R, save after restart.
