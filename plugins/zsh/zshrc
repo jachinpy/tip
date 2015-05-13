@@ -46,7 +46,7 @@ ZSH_THEME="simple"
 plugins=(git git-flow git-extras emacs python tmux pip django z gitignore tmuxinator)
 
 # User configuration
-
+export TERM=xterm-256color
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -103,6 +103,8 @@ export LC_CTYPE="zh_CN.UTF-8"
 
 # set editor env.
 export EDITOR='vim'
+
+alias ec='emacsclient -t -a ""'
 
 hash -d note=/home/jachin/Documents/notepad/
 

@@ -17,8 +17,8 @@ emacs24 libmysqlclient-dev build-dep python-lxml　global
 # Solved IOError: decoder jpeg not available.
 sag libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms1-dev
 
-# Terminal themes
-sag dconf-cli
+# Terminal themes and 256. result eg. $ tput colors $ 8
+sag dconf-cli ncurses-term
 git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 
 # Terminal plugins and optimize
@@ -35,10 +35,4 @@ cp ./plugins/tmux/tmux.conf ~/.tmux.conf
 cp ./keybindings.tmux  ~/.byobu/keybindings.tmux
 sudo gem install tmuxinator
 
-# emacs config
 git clone https://github.com/jachinpy/emacs.d.git ~/.emacs.d
-
-# Swap caps_lock and control_R, save after restart.
-cp ./plugins/keymap/Xmodmap $HOME/.Xmodmap
-cp $HOME/.xprofile $HOME/.xprofile.orig
-cp ./plugins/keymap/xprofile $HOME/.xprofile
