@@ -87,7 +87,7 @@ export SAVEHIST=1000
 # ">>" add to file
 setopt INC_APPEND_HISTORY
 # if history command same, save one.
-#setopt HIST_IGNORE_DUPS      
+#setopt HIST_IGNORE_DUPS
 # history command with timestamp.
 setopt EXTENDED_HISTORY
 
@@ -98,7 +98,7 @@ setopt EXTENDED_HISTORY
 # cabal update and install pandoc for markdown to html and so on.
 export PATH=/home/jachin/.cabal/bin:$PATH
 
-# set zh_CN env for locale china. 
+# set zh_CN env for locale china.
 export LC_CTYPE="zh_CN.UTF-8"
 
 # set editor env.
@@ -189,5 +189,4 @@ function wo() {
 }
 
 eval "$(rash init)"
-source ~/project/tip/configuration.sh
-source ~/.bin/tmuxinator.zsh
+source ~/project/tip/config.zsh
