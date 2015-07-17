@@ -12,30 +12,22 @@ ubuntu 12.04 or 14.04
  - more feature
 
 
-## First
+## First Step
     sudo apt-get install git
     git clone https://github.com/jachinpy/tip.git
-        ./init-packages.zsh (if no permission, chmod a+x *.zsh)
-        
+    为系统安装包
+    ./init-packages.zsh (if no permission, chmod a+x *.zsh)
+    为系统添加组件
+    vim ~/.zshrc
+    source ~/path/tip/engine.zsh
+
 ## Feature
   
  + python utils
-
-        [installed] goto python2.7 site-packages for projects.
-                use sitep command in shell.
+	goto python2.7 site-packages for projects. use sitep command in shell.
         
         sitep [virutalenv name]
-            if you in virutalenv. You can use it by itself.
-            for eg.
-
-        if you have virtualenvwrapper.
-
-            workon exmaple
-            (example)~ sitep
-
-        or use:
-
-            ~ sitep exmaple
+            if you in virutalenv. You can use it by itself directly.
 
  + swap keyboard
  
@@ -65,5 +57,10 @@ ubuntu 12.04 or 14.04
  + init-packages.zsh
 	用来初始化和更新系统安装包的组件，用于第一次或独立运行安装包。
  + migrate.zsh
-	用来迁移配置文件。
+	用来备份迁移配置文件, eg:
+
+		备份数据:
+		source migrate.zsh
+		backup_home /mnt/home_backup.tar.gz ~/project/tip/whatsbackup.txt
  
+	你可以参考whatsbackup.txt, 自定义备份文件和目录来替换掉上述命令

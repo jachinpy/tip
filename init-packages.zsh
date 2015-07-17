@@ -47,3 +47,5 @@ fi
 # python packages.
 sudo pip install virtualenvwrapper percol rash
 sudo gem install tmuxinator
+chsh -s /bin/zsh
+`
