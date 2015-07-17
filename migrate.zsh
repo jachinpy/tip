@@ -11,5 +11,4 @@ fi
 # session plugins
 cp ./plugins/tmux/tmux.conf ~/.tmux.conf
 cp ./keybindings.tmux  ~/.byobu/keybindings.tmux
-
 chsh -s /bin/zsh

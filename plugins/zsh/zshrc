@@ -189,4 +189,4 @@ function wo() {
 }
 
 eval "$(rash init)"
-source ~/project/tip/config.zsh
+source ~/project/tip/engine.zsh

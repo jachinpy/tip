@@ -6,19 +6,16 @@ ubuntu 12.04 or 14.04
 
 ## Goal
 
- - initial ubuntu env
- - develoop tool
- - system tool
- - configuration more feature
+ - initial ubuntu
+ - add develoop tool
+ - add utils tool
+ - more feature
 
 
-## Setup
-
-    start initial simple
-
-	    sudo apt-get install git
-	    git clone https://github.com/jachinpy/tip.git
-        ./setup.sh (if False, do chmod a+x setup.sh)
+## First
+    sudo apt-get install git
+    git clone https://github.com/jachinpy/tip.git
+        ./init-packages.zsh (if no permission, chmod a+x *.zsh)
         
 ## Feature
   
@@ -40,9 +37,9 @@ ubuntu 12.04 or 14.04
 
             ~ sitep exmaple
 
- + swap key
+ + swap keyboard
  
-        (仅供笔记本使用, 需要手动切换到 develop 分支)
+        (仅供参考, 需要手动切换到 develop 分支, 暂不更新)
         
         git checkout devlop
  
@@ -52,14 +49,21 @@ ubuntu 12.04 or 14.04
         将指令装入 .xprofile 中，以便开机执行。
         .xkb 方法不适用于 fcitx 和 ibus 框架。
 
- + plugins
-
-        install scbl for emacs.
-        ./scbl.sh
-
-    	install linux qq.
-	    ./install_qq.sh
+ + other plugins
+    	linux qq.
+	    .plugins/qq/qq.zsh
 
  + init system
  
         zsh, oh-my-zsh, pip, virtualenv, virtualenvwrapper,...
+
+
+## File struct
+
+ + engine.zsh
+	用来启动组件的核心。
+ + init-packages.zsh
+	用来初始化和更新系统安装包的组件，用于第一次或独立运行安装包。
+ + migrate.zsh
+	用来迁移配置文件。
+ 
