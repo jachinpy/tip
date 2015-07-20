@@ -1,0 +1,5 @@
+/usr/share/applications/Pycharm.desktop
+/etc/network/interfaces
+/etc/resolv.conf
+/etc/resolvconf/resolv.conf.d/base
+/etc/apt/sources.list.d
