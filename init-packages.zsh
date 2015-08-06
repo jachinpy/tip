@@ -43,6 +43,8 @@ if [ ! -x "$TEMP_APP" ];then
     git clone https://github.com/jachinpy/emacs.d.git ~/.emacs.d
 fi
 
+# Sloved: Error: pg_config executable not found.
+sudo apt-get install libpq-dev
 
 # python packages.
 sudo pip install virtualenvwrapper percol rash
