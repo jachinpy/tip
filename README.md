@@ -25,7 +25,7 @@ Tip
     vim ~/.zshrc
     source ~/path/tip/engine.sh
 
-## 配置文件支持
+## Configuration Support
   
  + python utils
 	goto python2.7 site-packages for projects. use sitep command in shell.
