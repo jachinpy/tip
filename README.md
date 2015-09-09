@@ -1,27 +1,31 @@
 Tip
 ========
 
-ubuntu 12.04 or 14.04
+
+## Version
+
+    ubuntu 12.04 or 14.04
 
 
-## Goal
+## Step
 
- - initial ubuntu
- - add develoop tool
- - add utils tool
- - more feature
-
-
-## First Step
+    安装git工具
     sudo apt-get install git
+
+    克隆项目
     git clone https://github.com/jachinpy/tip.git
-    为系统安装包
+
+    初次安装系统, 安装必须软件
     ./base-packages.sh (if no permission, chmod a+x *.sh)
-    为系统添加组件
+    
+    如果需要图形化软件
+    ./gui-extra.sh
+
+    如果需要使用 tip 的配置文件
     vim ~/.zshrc
     source ~/path/tip/engine.sh
 
-## Feature
+## 配置文件支持
   
  + python utils
 	goto python2.7 site-packages for projects. use sitep command in shell.
@@ -45,22 +49,15 @@ ubuntu 12.04 or 14.04
     	linux qq.
 	    .plugins/qq/qq.zsh
 
- + init system
- 
-        zsh, oh-my-zsh, pip, virtualenv, virtualenvwrapper,...
-
-
-## File struct
-
- + engine.zsh
+ + engine.sh
 	用来启动组件的核心。
  + base-packages.sh
 	用来初始化和更新系统安装包的组件，用于第一次或独立运行安装包。
- + migrate.zsh
+ + migrate.sh
 	用来备份迁移配置文件, eg:
 
 		备份数据:
-		source migrate.zsh
+		source migrate.sh
 		backup_home /mnt/home_backup.tar.gz ~/project/tip/whatsbackup.txt
  
 	你可以参考whatsbackup.txt, 自定义备份文件和目录来替换掉上述命令
