@@ -16,10 +16,10 @@ ubuntu 12.04 or 14.04
     sudo apt-get install git
     git clone https://github.com/jachinpy/tip.git
     为系统安装包
-    ./init-packages.zsh (if no permission, chmod a+x *.zsh)
+    ./base-packages.sh (if no permission, chmod a+x *.sh)
     为系统添加组件
     vim ~/.zshrc
-    source ~/path/tip/engine.zsh
+    source ~/path/tip/engine.sh
 
 ## Feature
   
@@ -54,7 +54,7 @@ ubuntu 12.04 or 14.04
 
  + engine.zsh
 	用来启动组件的核心。
- + init-packages.zsh
+ + base-packages.sh
 	用来初始化和更新系统安装包的组件，用于第一次或独立运行安装包。
  + migrate.zsh
 	用来备份迁移配置文件, eg:
