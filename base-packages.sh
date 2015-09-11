@@ -12,7 +12,7 @@ sudo apt-get intall -y $SCRAPY_DEPENCE
 
 # Sloved mysql-python.
 PYTHON_DEPENCE="python-pip ipython　python-virtualenv
- libmysqlclient-dev build-dep python-lxml　global"
+ libmysqlclient-dev build-dep python-lxml global"
 sudo apt-get install -y $PYTHON_DEPENCE
 
 # Solved IOError: decoder jpeg not available.
@@ -39,3 +39,5 @@ sudo apt-get install libpq-dev
 sudo pip install virtualenvwrapper percol rash
 sudo gem install tmuxinator
 chsh -s /bin/zsh
+echo $0
+
