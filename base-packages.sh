@@ -36,8 +36,7 @@ fi
 sudo apt-get install libpq-dev
 
 # python packages.
-sudo pip install virtualenvwrapper percol rash
+sudo pip install -r requirements.txt
 sudo gem install tmuxinator
 chsh -s /bin/zsh
 echo $0
-
