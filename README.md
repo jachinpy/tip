@@ -48,6 +48,7 @@ Tip
         jsp 运行  shell_plus
 
  + git 
+
         gh   - git hist 
         ghh  - git hist -max-count=1
         gfp  - git fetch -p
