@@ -28,16 +28,40 @@ Tip
     vim ~/.zshrc
     source ~/utils/tip/engine.sh
 
-    如果出现 locales Error 问题, 执行
-    fix_remote_locales
 
-## Configuration Support
+## Commands
   
  + python utils
-	goto python2.7 site-packages for projects. use sitep command in shell.
         
         sitep [virutalenv name]
+            goto python2.7 site-packages for projects. use sitep command in shell.
             if you in virutalenv. You can use it by itself directly.
+
+        pythonserver 
+            simple server 9090 tcp. 简单的服务器.可以用来传输文件.
+ + django
+
+        jr 运行 runserver
+        jt 运行 test
+        jd 运行 dbshell
+        jsy 运行 syncdb 
+        jsp 运行  shell_plus
+
+ + git 
+        gh   - git hist 
+        ghh  - git hist -max-count=1
+        gfp  - git fetch -p
+        gffs - git flow feature start $1
+        gcfp - git cat-file -p 
+        gcft - git cat-file -t
+        gcto - git checkout --track origin $1
+
+ + network
+        extranet  获取外网IP        
+
+ + locales
+        fix_remote_locales 
+             如果使用虚拟环境或远程服务器,可能会有 locale error.
 
  + swap keyboard
  
@@ -51,19 +75,24 @@ Tip
         将指令装入 .xprofile 中，以便开机执行。
         .xkb 方法不适用于 fcitx 和 ibus 框架。
 
- + other plugins
-    	linux qq.
-	    .plugins/qq/qq.zsh
+ + qq
+        .plugins/qq/qq.zsh  安装 linux 版本QQ.
+
+ + 数据备份
+
+        backup_home
+
+            用来备份迁移配置文件, eg:
+            source migrate.sh
+            backup_home /mnt/home_backup.tar.gz ~/utils/tip/whatsbackup.txt
+
+            你可以参考whatsbackup.txt, 自定义备份文件和目录来替换掉上述命令
+
+
+## Code Struct 
 
  + engine.sh
 	用来启动组件的核心。
  + base-packages.sh
 	用来初始化和更新系统安装包的组件，用于第一次或独立运行安装包。
- + migrate.sh
-	用来备份迁移配置文件, eg:
 
-		备份数据:
-		source migrate.sh
-		backup_home /mnt/home_backup.tar.gz ~/project/tip/whatsbackup.txt
- 
-	你可以参考whatsbackup.txt, 自定义备份文件和目录来替换掉上述命令
