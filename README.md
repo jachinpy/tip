@@ -58,9 +58,11 @@ Tip
         gcto - git checkout --track origin $1
 
  + network
+
         extranet  获取外网IP        
 
  + locales
+
         fix_remote_locales 
              如果使用虚拟环境或远程服务器,可能会有 locale error.
 
@@ -89,6 +91,10 @@ Tip
 
             你可以参考whatsbackup.txt, 自定义备份文件和目录来替换掉上述命令
 
+ + hosts
+
+        updatehosts  [filename]
+        更新 hosts 文件
 
 ## Code Struct 
 
