@@ -11,6 +11,9 @@ Tip
 
     安装git工具
     sudo apt-get install git
+    
+    mkdir -p ~/utils
+    cd ~/utils
 
     克隆项目
     git clone https://github.com/jachinpy/tip.git
@@ -23,7 +26,10 @@ Tip
 
     如果需要使用 tip 的配置文件
     vim ~/.zshrc
-    source ~/path/tip/engine.sh
+    source ~/utils/tip/engine.sh
+
+    如果出现 locales Error 问题, 执行
+    fix_remote_locales
 
 ## Configuration Support
   

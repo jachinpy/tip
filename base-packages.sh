@@ -3,7 +3,7 @@
 sudo apt-get update
 
 LIST_OF_APP="zsh git gitk git-flow kdiff3 tmux
-     curl silversearcher-ag byobu tree ruby gem"
+     curl silversearcher-ag byobu tree ruby rubygems-integration"
 sudo apt-get install -y $LIST_OF_APP
 
 # Sloved scrapy error,then sudo pip install Scrapy.
