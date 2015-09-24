@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="simple"
+ZSH_THEME="gentoo"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -46,7 +46,9 @@ ZSH_THEME="simple"
 plugins=(git git-flow git-extras emacs python tmux pip django z gitignore tmuxinator)
 
 # User configuration
-export TERM=xterm-256color
+# if you use a remote server, it's is suggested that don't set it up.
+# maybe conflict with other software.
+# export TERM=xterm-256color
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -98,18 +100,12 @@ setopt EXTENDED_HISTORY
 # cabal update and install pandoc for markdown to html and so on.
 export PATH=/home/jachin/.cabal/bin:$PATH
 
-# set zh_CN env for locale china.
-export LC_CTYPE="zh_CN.UTF-8"
-
 # set editor env.
-export EDITOR='vim'
+export EDITOR='ec'
 
 alias ec='emacsclient -t -a ""'
 
 hash -d note=/home/jachin/Documents/notepad/
-
-# display process for "python and Django", and so on.
-alias pj="ps gaux | grep runserver | grep -v grep | awk '{print $2}'"
 
 # evernote sync from email
 alias plain='/home/jachin/Documents/project/soplain/plain.py'
@@ -117,6 +113,17 @@ alias plain='/home/jachin/Documents/project/soplain/plain.py'
 export WORKON_HOME=$HOME/.virtualenvs
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
 source /usr/local/bin/virtualenvwrapper.sh
+
+# tramp hangs fix.
+if [[ "$TERM" == "dumb" ]]
+then
+  unsetopt zle
+  unsetopt prompt_cr
+  unsetopt prompt_subst
+  unfunction precmd
+  unfunction preexec
+  PS1='$ '
+fi
 
 # percol
 function ppgrep() {
@@ -189,4 +196,4 @@ function wo() {
 }
 
 eval "$(rash init)"
-source ~/project/tip/engine.zsh
+source ~/utils/tip/engine.sh
