@@ -1,0 +1,12 @@
+git
+git-flow
+gitk
+tree
+kdiff3
+tmux
+curl
+silversearcher-ag 
+byobu 
+tree 
+ruby 
+rubygems-integration

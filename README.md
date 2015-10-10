@@ -18,8 +18,8 @@ Tip
     克隆项目
     git clone https://github.com/jachinpy/tip.git
 
-    初次安装系统, 安装必须软件
-    ./base-packages.sh (if no permission, chmod a+x *.sh)
+    私人初始化安装系统, 安装必须软件
+    ./personal_init.sh (if no permission, chmod a+x *.sh)
     
     如果需要图形化软件
     ./gui-extra.sh
@@ -100,6 +100,6 @@ Tip
 
  + engine.sh
 	用来启动组件的核心。
- + base-packages.sh
+ + personal_init.sh
 	用来初始化和更新系统安装包的组件，用于第一次或独立运行安装包。
 

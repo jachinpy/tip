@@ -1,0 +1,13 @@
+python-dev 
+libffi-dev 
+libssl-dev 
+libxml2-dev 
+libxslt1-dev
+libmysqlclient-dev 
+build-dep 
+python-lxml
+bjpeg8-dev 
+zlib1g-dev 
+libfreetype6-dev 
+liblcms1-dev
+
