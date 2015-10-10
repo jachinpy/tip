@@ -9,6 +9,9 @@ cat basic_backpacks.txt | xargs sudo apt-get install -y
 # fix IOError: decoder jpeg not available.
 cat python_dev.txt | xargs sudo apt-get intall -y
 
+# fix "error: command 'x86_64-linux-gnu-gcc' failed with exit status 1"
+sudo apt-get build-dep -y python-lxml
+
 # postgresql client and server.
 # libpq-dev sloved: Error: pg_config executable not found.
 sudo apt-get install -y postgresql-client postgresql libpd-dev
