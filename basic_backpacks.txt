@@ -12,3 +12,5 @@ tree
 ruby 
 rubygems-integration
 rar
+expect
+tcl
