@@ -1,14 +1,21 @@
 #!/bin/bash
 
-backup_home () {
-	tar -zcvpf ./backup-home.tar.gz -T $1
+
+daystamp=$(date +%Y-%m-%d)
+basedirscript=$(cd "$(dirname "$0")"; pwd)
+
+
+bakhome () {
+	cd $HOME;
+	tar -zcvpf  "./home$daystamp.tar.gz" -T "$basedirscript/bakhome.ress"
 }
 
-backup_conf () {
-	tar -zcvpf ./config.tar.gz -C / -T $1
+bakconf () {
+	tar -zcvpf "./conf$daystamp.tar.gz" -C / -T "$basedirscript/sys_init.ress"
 }
 
 # put google | mozilla hosts in here. and so on.
-updatehosts () {
+uphosts () {
      sudo sh -c 'echo "`cat $1`" >> /etc/hosts'
 }
+
