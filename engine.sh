@@ -5,7 +5,7 @@ basedirscript=$(cd "$(dirname "$0")"; pwd)
 
 array_pc=(django git python byobu tmux tmuxinator markdown scbl zsh locales)
 
-PcPluginsConfig ()
+Loading_plugins ()
 {
     for i in ${array_pc[@]}
     do
@@ -14,5 +14,5 @@ PcPluginsConfig ()
     done
 }
 
-PcPluginsConfig
+Loading_plugins
 source "$basedirscript/migrate.sh"
