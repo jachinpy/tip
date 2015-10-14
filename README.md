@@ -83,17 +83,14 @@ Tip
 
  + 数据备份
 
-        backup_home
+        bakhome to_path   备份家目录
+        bakconf to_path   备份系统资源,包括源地址, 网络配置等
 
-            用来备份迁移配置文件, eg:
-            source migrate.sh
-            backup_home /mnt/home_backup.tar.gz ~/utils/tip/whatsbackup.txt
-
-            你可以参考whatsbackup.txt, 自定义备份文件和目录来替换掉上述命令
+        参考 .ress 文件, 修改或替换备份文件, 记得还原.
 
  + hosts
 
-        updatehosts  [filename]
+        uphosts  [filename]
         更新 hosts 文件
 
 ## Code Struct 
