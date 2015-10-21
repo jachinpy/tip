@@ -4,7 +4,7 @@ Tip
 
 ## Version
 
-    ubuntu 12.04 or 14.04
+    Ubuntu 12.04 or 14.04
 
 
 ## Step
@@ -34,7 +34,7 @@ Tip
  + python utils
         
         sitep [virutalenv name]
-            goto python2.7 site-packages for projects. use sitep command in shell.
+            go to python2.7 site-packages for projects. use sitep command in shell.
             if you in virutalenv. You can use it by itself directly.
 
         pythonserver 
@@ -70,16 +70,16 @@ Tip
  
         (仅供参考, 需要手动切换到 develop 分支, 暂不更新)
         
-        git checkout devlop
+        git checkout develop
  
-        ibus 输入法框架不可以删除，ubuntu组件依赖。在此基础上
+        ibus 输入法框架不可以删除，Ubuntu组件依赖。在此基础上
         运行 gnome-tweak-tool 方法较好。
         Fcitx 输入法框架，需要使用 .Xmodmap 文件交换按键，并
         将指令装入 .xprofile 中，以便开机执行。
         .xkb 方法不适用于 fcitx 和 ibus 框架。
 
  + qq
-        .plugins/qq/qq.zsh  安装 linux 版本QQ.
+        .plugins/qq/qq.zsh  安装 Linux 版本QQ.
 
  + 数据备份
 
@@ -90,7 +90,7 @@ Tip
 
  + hosts
 
-        uphosts  [filename]
+        uphosts  [file-name]
         更新 hosts 文件
 
 ## Code Struct 
