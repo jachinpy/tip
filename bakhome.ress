@@ -26,6 +26,7 @@ test_thumbor
 .tmux.conf
 .tmuxinator
 .vim
+.vimrc
 .viminfo
 .vimperator
 .vimperatorrc
