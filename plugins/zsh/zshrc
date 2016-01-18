@@ -197,6 +197,14 @@ function wo() {
     fi
     workon $(workongrep $QUERY)
 }
+function pygg () {
+    if [[ $1 == "" ]]; then
+	    PERCOL=percol
+    else
+ 	    PERCOL="percol --query $1"
+    fi
+    find . -name "*.py" | eval $PERCOL
+}
 
 eval "$(rash init)"
 source ~/utils/tip/engine.sh
