@@ -43,7 +43,7 @@ ZSH_THEME="gentoo"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow git-extras emacs python tmux pip django z gitignore tmuxinator)
+plugins=(git git-flow git-extras emacs python tmux pip django z gitignore tmuxinator pj)
 
 # User configuration
 # if you use a remote server, it's is suggested that don't set it up.
@@ -102,6 +102,9 @@ export PATH=/home/jachin/.cabal/bin:$PATH
 
 # set editor env.
 export EDITOR='ec'
+
+# set project base path.
+PROJECT_PATHS=(~/dev ~/project ~/utils)
 
 alias ec='emacsclient -t -a ""'
 
