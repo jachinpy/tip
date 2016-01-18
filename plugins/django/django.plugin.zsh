@@ -6,4 +6,3 @@ alias jr='python manage.py runserver'
 alias jt="python manage.py test "
 alias jd="python manage.py dbshell"
 alias jsy="python manage.py syncdb"
-alias pj="ps gaux | grep runserver | grep -v grep | awk '{print $2}'"
