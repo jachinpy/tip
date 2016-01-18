@@ -205,6 +205,9 @@ function pygg () {
     fi
     find . -name "*.py" | eval $PERCOL
 }
+function pyvim () {                                                                                                                                                                  1 
+    vim $(find . -name "*.py" | percol)
+}
 
 eval "$(rash init)"
 source ~/utils/tip/engine.sh
