@@ -2,3 +2,4 @@ virtualenvwrapper
 percol
 rash
 yapf
+python-Levenshtein
