@@ -3,3 +3,4 @@ percol
 rash
 yapf
 python-Levenshtein
+powerline-status==2.3

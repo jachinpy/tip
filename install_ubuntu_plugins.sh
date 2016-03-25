@@ -30,7 +30,7 @@ if [ ! -x "$TEMP_APP" ]; then
 fi
 
 # python packages.
-sudo pip install -r requirements.txt
+sudo pip install -r requirements.txt -i http://pypi.douban.com/simple
 sudo gem install tmuxinator
 chsh -s /bin/zsh
 echo $0
