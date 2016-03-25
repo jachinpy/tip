@@ -4,32 +4,32 @@ Tip
 
 ## Version
 
-    Ubuntu 12.04 or 14.04
+    Ubuntu 14.04 or new
 
 
-## Step
+## install step
 
-    安装git工具
+    安装git
     sudo apt-get install git
     
     mkdir -p ~/utils
     cd ~/utils
 
-    克隆项目
+    开始
     git clone https://github.com/jachinpy/tip.git
 
     私人初始化安装系统, 安装必须软件
-    ./personal_init.sh (if no permission, chmod a+x *.sh)
+    ./install_ubuntu_plugins.sh (if no permission, chmod a+x *.sh)
     
-    如果需要图形化软件
-    ./gui-extra.sh
+    安装偏向图形化软件
+    ./install_gui_plugins.sh
 
-    如果需要使用 tip 的配置文件
+    配置
     vim ~/.zshrc
     source ~/utils/tip/engine.sh
 
 
-## Commands
+## engine.sh include Commands
   
  + python utils
         
@@ -93,10 +93,13 @@ Tip
         uphosts  [file-name]
         更新 hosts 文件
 
-## Code Struct 
 
- + engine.sh
-	用来启动组件的核心。
- + personal_init.sh
-	用来初始化和更新系统安装包的组件，用于第一次或独立运行安装包。
+## a few tips
 
+    如何合理创建linux系统？
+    /boot/ /home/  根， 应当最少这几项. 方便系统重度瘫痪后快速修复。
+    方法： 保留家目录，其它分区格式化。
+
+    如何在 linux 中开发？
+    方法： 最好的办法就是隔离，无论使用 virtualenv, docker, 还是虚拟机，都会
+    降低开发风险。

@@ -5,8 +5,8 @@ if [ ! -x "$TEMP_APP" ];then
     git clone https://github.com/jachinpy/emacs.d.git ~/.emacs.d
 fi
 
-TEMP_OPTIONAL_PACKAGES="gnome-tweak-tool libnotify-bin gnome-terminal-colors-solarize ibus-googlepinyin
-                         chromium-browser mysql-server mysql-client"
+TEMP_OPTIONAL_PACKAGES="gnome-tweak-tool libnotify-bin ibus-googlepinyin
+                         chromium-browser mysql-server mysql-client emacs w3m"
 sudo apt-get install -y $TEMP_OPTIONAL_PACKAGES
 
 # Terminal plugins and optimize
