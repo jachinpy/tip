@@ -4,3 +4,5 @@ rash
 yapf
 python-Levenshtein
 powerline-status==2.3
+ipython
+flake8

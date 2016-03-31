@@ -6,7 +6,7 @@ if [ ! -x "$TEMP_APP" ];then
 fi
 
 TEMP_OPTIONAL_PACKAGES="gnome-tweak-tool libnotify-bin ibus-googlepinyin
-                         chromium-browser mysql-server mysql-client emacs w3m"
+                         chromium-browser mysql-server mysql-client emacs w3m apache2-utils"
 sudo apt-get install -y $TEMP_OPTIONAL_PACKAGES
 
 # Terminal plugins and optimize

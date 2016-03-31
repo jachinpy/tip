@@ -16,3 +16,5 @@ expect
 tcl
 sqlite
 sqlite3
+redis-server
+docker-engine
