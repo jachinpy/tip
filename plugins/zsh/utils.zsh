@@ -19,3 +19,6 @@ pythonserver () {
 }
 
 alias jpgmv="python ~/utils/tip/plugins/codingutils/coding.py"
+
+# you should install deepwine qqintl.
+alias qqfind="find ~/.deepinwine/qqintl| grep FileRecv | grep $1"

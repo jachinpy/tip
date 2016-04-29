@@ -18,3 +18,7 @@ sqlite
 sqlite3
 redis-server
 docker-engine
+rabbitmq-server
+
+libffi-dev
+libssl-dev
