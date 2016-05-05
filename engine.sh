@@ -3,7 +3,7 @@
 basedirscript=$(cd "$(dirname "$0")"; pwd)
 
 
-array_pc=(django git python byobu tmux tmuxinator markdown scbl zsh locales emacs vim)
+array_pc=(django git python byobu tmux tmuxinator markdown scbl zsh locales emacs vim 360library)
 
 Loading_plugins ()
 {
