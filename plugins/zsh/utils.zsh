@@ -22,3 +22,6 @@ alias jpgmv="python ~/utils/tip/plugins/codingutils/coding.py"
 
 # you should install deepwine qqintl.
 alias qqfind="find ~/.deepinwine/qqintl| grep FileRecv | grep $1"
+
+# tree -I node_modules
+alias treei="tree -I node_modules"

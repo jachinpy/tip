@@ -22,3 +22,5 @@ rabbitmq-server
 
 libffi-dev
 libssl-dev
+
+whois
