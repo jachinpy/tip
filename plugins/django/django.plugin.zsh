@@ -35,8 +35,10 @@ function env-list () {
 }
 
 function env-current-branch () {
-	echo "你现在处于"
-	awk '{split($2,a,",");for(i in a)print $1"\t"a[i]}' .env
+	sed -n "1p" .env | xargs > django-env-test-temp.txt
+	temp_env_var=$(cut -d "." -f 3 django-env-test-temp.txt)
+	echo "你现在处于 "$temp_env_var" 分支"
+	rm django-env-test-temp.txt
 }
 
 
