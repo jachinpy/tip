@@ -34,8 +34,16 @@ function env-list () {
 	ls .env*
 }
 
+function env-current-branch () {
+	echo "你现在处于"
+	awk '{split($2,a,",");for(i in a)print $1"\t"a[i]}' .env
+}
+
+
 alias ecd='echo "你现在处于　dev 分支。" && env-co .env.dev'
 alias ecp='echo "你现在处于　prod 分支。" && env-co .env.prod'
 alias ect='echo "你现在处于　test 分支。" && env-co .env.tes'
 alias ecl='env-list'
+alias eb='env-current-branch'
+
 
