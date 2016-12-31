@@ -9,7 +9,8 @@ curl
 silversearcher-ag 
 byobu 
 tree 
-ruby 
+ruby
+gem
 rubygems-integration
 rar
 expect
