@@ -1,5 +1,5 @@
 vim
-git
+openssh-server
 git-flow
 gitk
 tree
