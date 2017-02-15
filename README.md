@@ -14,6 +14,7 @@ Tip
     
     mkdir -p ~/utils
     cd ~/utils
+    sudo apt-get update
 
     开始
     git clone https://github.com/jachinpy/tip.git

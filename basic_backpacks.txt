@@ -24,5 +24,8 @@ libffi-dev
 libssl-dev
 
 whois
+
 python-dev
 python-pip
+
+zsh

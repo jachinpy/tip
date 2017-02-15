@@ -1,10 +1,8 @@
 libffi-dev 
 libssl-dev 
-libxml2-dev 
-libxslt1-dev
 libmysqlclient-dev 
 libjpeg62-dev
 zlib1g-dev 
 libfreetype6-dev 
-liblcms1-dev
+liblcms2-dev
 
