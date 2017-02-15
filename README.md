@@ -23,7 +23,9 @@ Tip
     
     安装偏向图形化软件
     ./install_gui_plugins.sh
-
+     
+    chsh -s /bin/zsh && echo $0
+	
     配置
     vim ~/.zshrc
     source ~/utils/tip/engine.sh
