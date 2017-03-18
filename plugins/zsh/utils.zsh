@@ -25,3 +25,5 @@ alias qqfind="find ~/.deepinwine/qqintl| grep FileRecv | grep $1"
 
 # tree -I node_modules
 alias treei="tree -I node_modules"
+
+alias rsyncc="rsync -avzrtopgL  --progress "
