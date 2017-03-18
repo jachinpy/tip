@@ -96,6 +96,11 @@ Tip
         uphosts  [file-name]
         更新 hosts 文件
 
+## Pycharm
+    configuration: Pycharm.desktop
+    使用时,Exec,Icon,请使用绝对路径，文件名和Name保持一致，然后在可以支持Dash,
+    同时，可以复制到桌面,然后双击即可使用。
+
 
 ## a few tips
 

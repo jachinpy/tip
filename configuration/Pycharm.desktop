@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Pycharm
+GenericName=Pycharm3
+Comment=Pycharm3: The Pythoin IDE
+Exec=sh xx/Downloads/pycharm-2016.3.3/bin/pycharm.sh
+Icon=xx/Downloads/pycharm-2016.3.3/bin/pycharm.png
+Terminal=pycharm
+Categories=Pycharm;
+
