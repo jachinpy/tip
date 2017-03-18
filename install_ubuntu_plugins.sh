@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # conventional component
-cat basic_backpacks.txt | xargs sudo apt-get install -y
+cat base_packages.txt | xargs sudo apt-get install -y
 if [ $? != 0 ]
 then
-echo "Error: basic_backpacks.txt not install!"
+echo "Error: base_packages.txt not install!"
 exit 1
 fi
 
