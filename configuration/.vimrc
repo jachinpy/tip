@@ -14,3 +14,4 @@ autocmd FileType python set expandtab
 set smartindent "智能缩进"
 set cindent "C语言风格缩进"
 set autoindent "自动缩进"
+set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936,
