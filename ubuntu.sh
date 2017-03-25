@@ -41,13 +41,13 @@ sudo apt-get install pandoc ess
 sudo apt-get install slime clisp gcl
 ln -s /usr/bin/clisp ~/bin/lisp
 
+# python packages.
+sudo pip install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
 $TEMP_APP=$HOME"/.oh-my-zsh"
 if [ ! -x "$TEMP_APP" ]; then
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
-
-# python packages.
-sudo pip install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
 # gem doctor
 if [ -x "`which gem`"]

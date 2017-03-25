@@ -19,11 +19,14 @@ Tip
     开始
     git clone https://github.com/jachinpy/tip.git
 
-    私人初始化安装系统, 安装必须软件
-    ./install_ubuntu_plugins.sh (if no permission, chmod a+x *.sh)
+    初始化ubuntu
+    ./ubuntu.sh (if no permission, chmod a+x *.sh)
+
+    初始化centos
+    ./centos.sh
     
-    安装偏向图形化软件
-    ./install_gui_plugins.sh
+    安装mysql
+    ./ubuntu_mysql.sh
      
     chsh -s /bin/zsh && echo $0
 	
