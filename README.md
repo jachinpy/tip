@@ -7,7 +7,7 @@ Tip
     Ubuntu 14.04 or new
 
 
-## install step
+## install system & configuration
 
     安装git
     sudo apt-get install git
