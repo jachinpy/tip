@@ -5,33 +5,33 @@ Tip
 ## Version
 
     Ubuntu 14.04 or new
+    Centos
 
 
 ## install system & configuration
-
-    安装git
-    sudo apt-get install git
     
     mkdir -p ~/utils
-    cd ~/utils
+    cd ~/utils && git clone https://github.com/jachinpy/tip.git
+
+
+##  初始化ubuntu
     sudo apt-get update
-
-    开始
-    git clone https://github.com/jachinpy/tip.git
-
-    初始化ubuntu
     ./ubuntu.sh (if no permission, chmod a+x *.sh)
+    chsh -s /bin/zsh && echo $0
 
-    初始化centos
+    ./ubuntu_mysql.sh  安装mysql
+
+
+##  初始化centos
     ./centos.sh
     
-    安装mysql
-    ./ubuntu_mysql.sh
      
-    chsh -s /bin/zsh && echo $0
 	
-    配置
+##  配置
     vim ~/.zshrc
+    or
+    vim ~/.bashrc
+
     source ~/utils/tip/engine.sh
 
 

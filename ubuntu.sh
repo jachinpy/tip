@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get install git
+
 # conventional component
 cat base_packages.txt | xargs sudo apt-get install -y
 if [ $? != 0 ]
