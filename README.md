@@ -2,13 +2,13 @@ Tip
 ========
 
 
-##  Version
+##  Support
 
     Ubuntu 14.04 or new
     Centos
 
 
-##  Preload && instruction
+##  Pre-installation && instruction
     
     mkdir -p ~/utils
     cd ~/utils && git clone https://github.com/jachinpy/tip.git
@@ -23,14 +23,14 @@ Tip
     source ~/.zshrc
 
 
-##  Install ubuntu
+##  Install ubuntu packages for pythoner
     sudo apt-get update
     ./ubuntu.sh (if no permission, chmod a+x *.sh)
 
     chsh -s /bin/zsh && echo $0
 
 
-##  Install centos
+##  Install centos packages for pythoner
     ./centos.sh
     
 
