@@ -2,32 +2,34 @@ Tip
 ========
 
 
-## Version
+##  Version
 
     Ubuntu 14.04 or new
     Centos
 
 
-## install system & configuration
+##  Preload
     
     mkdir -p ~/utils
     cd ~/utils && git clone https://github.com/jachinpy/tip.git
 
 
-##  初始化ubuntu
+##  Install ubuntu
     sudo apt-get update
     ./ubuntu.sh (if no permission, chmod a+x *.sh)
     chsh -s /bin/zsh && echo $0
 
-    ./ubuntu_mysql.sh  安装mysql
 
-
-##  初始化centos
+##  Install centos
     ./centos.sh
     
+
+##  Install mysql
+    ./centos_mysql.sh
+    ./ubuntu_mysql.sh
      
 	
-##  配置
+##  Configuration
     vim ~/.zshrc
     or
     vim ~/.bashrc
@@ -35,7 +37,7 @@ Tip
     source ~/utils/tip/engine.sh
 
 
-## engine.sh include Commands
+##  Commands
   
  + python utils
         
@@ -99,18 +101,21 @@ Tip
         uphosts  [file-name]
         更新 hosts 文件
 
-## Pycharm
-    configuration: Pycharm.desktop
+##  Pycharm
+    cd configuration
+    cp Pycharm.desktop /path/
+
     使用时,Exec,Icon,请使用绝对路径，文件名和Name保持一致，然后在可以支持Dash,
     同时，可以复制到桌面,然后双击即可使用。
 
 
-## a few tips
+##  A few tips
 
     如何合理创建linux系统？
     /boot/ /home/  根， 应当最少这几项. 方便系统重度瘫痪后快速修复。
     方法： 保留家目录，其它分区格式化。
 
     如何在 linux 中开发？
-    方法： 最好的办法就是隔离，无论使用 virtualenv, docker, 还是虚拟机，都会
+    方法： 隔离, 无论使用 virtualenv, docker, 还是虚拟机，都会
     降低开发风险。
+
