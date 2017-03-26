@@ -8,15 +8,25 @@ Tip
     Centos
 
 
-##  Preload
+##  Preload && instruction
     
     mkdir -p ~/utils
     cd ~/utils && git clone https://github.com/jachinpy/tip.git
+
+    如果需要安装到其他目录：
+    cd tip/
+    cat engine.sh
+
+    修改 TIP_JACHINPY=$HOME/utils/tip
+    或
+    export TIP_JACHINPY=/path/
+    source ~/.zshrc
 
 
 ##  Install ubuntu
     sudo apt-get update
     ./ubuntu.sh (if no permission, chmod a+x *.sh)
+
     chsh -s /bin/zsh && echo $0
 
 
