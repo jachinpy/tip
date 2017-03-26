@@ -6,8 +6,24 @@ if [ ! -n "$TIP_JACHINPY" ]; then
 fi
 
 
-array_pc=(virtualenvwrapper django git python byobu tmux tmuxinator markdown scbl
-          zsh locales vim 360library node pypi)
+# support feature for array_pc, if you need other plugins, into array_pc.see plugins.
+array_pc=(
+        virtualenvwrapper
+        django
+        git
+        pypi
+        python
+        byobu
+        markdown
+        scbl
+        zsh
+        locales
+        vim
+        360library
+        node
+        tmux
+        tmuxinator
+        )
 
 
 Loading_plugins () {
