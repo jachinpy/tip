@@ -1,19 +1,21 @@
 #! /bin/bash
 
-basedirscript=$(cd "$(dirname "$0")"; pwd)
+
+if [ ! -n "$TIP_JACHINPY" ]; then
+    TIP_JACHINPY=$HOME/utils/tip
+fi
 
 
 array_pc=(virtualenvwrapper django git python byobu tmux tmuxinator markdown scbl
           zsh locales vim 360library node pypi)
 
-Loading_plugins ()
-{
+
+Loading_plugins () {
     for i in ${array_pc[@]}
     do
-        source "$basedirscript/plugins/$i/"*.zsh
-	#echo "Loding $i ..."
+        source "$TIP_JACHINPY/plugins/$i/"*.zsh
     done
 }
 
 Loading_plugins
-source "$basedirscript/migrate.sh"
+source $TIP_JACHINPY/migrate.sh

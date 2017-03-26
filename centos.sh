@@ -11,7 +11,7 @@ sudo yum install mysql-community-server
 # gcc, gdb, kernel, python, and so on.
 sudo yum install -y bzip2-devel bzip2-libs
 sudo yum install -y readline readline-devel readline-static
-sudo yum install -y python-devel zlib-devel openssl-devel
+sudo yum install -y python-devel zlib-devel openssl-devel mysql-devel
 
 
 sudo yum -y install gcc gcc-c++         # C编译器
