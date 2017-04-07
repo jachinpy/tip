@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias tnw="tmux new-window"
+alias tnw="tmux new-window -n"
 alias tlw="tmux list-windows"
 alias tsw="tmux select-window -t"
 alias trw="tmux rename-window"
