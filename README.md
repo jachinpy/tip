@@ -129,3 +129,8 @@ Tip
     方法： 隔离, 无论使用 virtualenv, docker, 还是虚拟机，都会
     降低开发风险。
 
+    创建开发级别的目录, 使用小写区别于系统默认的大写，使用tmp来区别系统Temp目录。
+    cd ~
+    mkdir -p srv/pypi/web/
+    mkdir tmp
+
