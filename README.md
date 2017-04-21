@@ -118,8 +118,12 @@ Tip
     使用时,Exec,Icon,请使用绝对路径，文件名和Name保持一致，然后在可以支持Dash,
     同时，可以复制到桌面,然后双击即可使用。
 
+## Ipython startup
+    mkdir ~/.ipython/profile_default/startup/ 
+    cp configuration/ipython/start.py ~/.ipython/profile_default/startup/start.py
 
-##  A few tips
+
+## A few tips
 
     如何合理创建linux系统？
     /boot/ /home/  根， 应当最少这几项. 方便系统重度瘫痪后快速修复。
