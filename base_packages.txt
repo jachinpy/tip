@@ -29,3 +29,4 @@ python-dev
 python-pip
 
 zsh
+tmuxinator
