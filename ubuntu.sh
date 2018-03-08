@@ -44,6 +44,7 @@ sudo apt-get install slime clisp gcl
 ln -s /usr/bin/clisp ~/bin/lisp
 
 # python packages.
+sudo pip install --upgrade pip
 sudo pip install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
 $TEMP_APP=$HOME"/.oh-my-zsh"

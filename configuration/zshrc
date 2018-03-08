@@ -210,4 +210,4 @@ function pyvim () {                                                             
 }
 
 eval "$(rash init)"
-source ~/utils/tip/engine.sh
+source ~/utils/tip/init.sh

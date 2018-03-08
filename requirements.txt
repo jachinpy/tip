@@ -1,8 +1,10 @@
+# Python software build packages order.
 virtualenvwrapper
 percol
 rash
+# ipython6(python3.x) ipthon5.x(python2.x)
+ipython==5
 yapf
 python-Levenshtein
 powerline-status==2.3
-ipython
 flake8

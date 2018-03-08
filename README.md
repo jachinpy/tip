@@ -22,7 +22,7 @@ Tip
 
     如果需要安装到其他目录：
     cd tip/
-    vim engine.sh
+    vim init.sh
 
     项目根目录默认：TIP_JACHINPY=$HOME/utils/tip
     可以设置 export TIP_JACHINPY=/path/
@@ -50,7 +50,7 @@ Tip
     or
     vim ~/.bashrc
 
-    source ~/utils/tip/engine.sh
+    source ~/utils/tip/init.sh
 
 
 ##  Commands
