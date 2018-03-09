@@ -8,7 +8,7 @@ Tip
     Centos
 
 
-##  Pre-installation && instruction
+##  step
     
     需要提前安装的软件
     openssh-server   (虚拟机)
@@ -18,12 +18,12 @@ Tip
     mkdir -p ~/utils
     cd ~/utils && git clone https://github.com/jachinpy/tip.git
     
-    部署python环境见 （eg. Install ubuntu packages for pythoner）
+    部署环境
+    ./loader.sh (如失效，可分别安装ubuntu.sh,centos.sh)
 
     如果需要安装到其他目录：
     cd tip/
     vim init.sh
-
     项目根目录默认：TIP_JACHINPY=$HOME/utils/tip
     可以设置 export TIP_JACHINPY=/path/
     source ~/.zshrc

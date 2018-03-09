@@ -3,6 +3,7 @@
 .idea
 *.pyc
 *.bak
+*.swp
 [#]*[#]
 .#*
 GTAGS

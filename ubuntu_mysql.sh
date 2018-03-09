@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-TEMP_OPTIONAL_PACKAGES="gnome-tweak-tool libnotify-bin ibus-googlepinyin
+TEMP_OPTIONAL_PACKAGES="gnome-tweak-tool libnotify-bin
                          chromium-browser mysql-server mysql-client emacs w3m apache2-utils"
 sudo apt-get install -y $TEMP_OPTIONAL_PACKAGES
 
