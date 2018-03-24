@@ -1,32 +1,9 @@
-vim
-openssh-server
-git-flow
-gitk
-tree
-kdiff3
-tmux
-curl
-silversearcher-ag 
-byobu 
-tree 
-ruby
-gem
-rubygems-integration
-rar
-expect
-tcl
 sqlite
 sqlite3
 redis-server
 rabbitmq-server
+openssh-server
 
-libffi-dev
-libssl-dev
 
-whois
 
-python-dev
-python-pip
 
-zsh
-tmuxinator

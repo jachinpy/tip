@@ -33,8 +33,6 @@ Tip
     sudo apt-get update
     ./ubuntu.sh (if no permission, chmod a+x *.sh)
 
-    chsh -s /bin/zsh && echo $0
-
 
 ##  Install centos packages for pythoner
     ./centos.sh

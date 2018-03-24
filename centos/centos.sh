@@ -2,19 +2,14 @@
 
 
 # update source
-sudo yum -y install epel-release
-sudo yum install -y yum-axelget
-sudo yum update
-sudo yum -y install git
+sudo yum -y install epel-release yum-axelget && sudo yum update
 
 # python development.
-sudo yum install -y python-pip
-sudo yum install -y bzip2-devel bzip2-libs
-sudo yum install -y readline readline-devel readline-static
-sudo yum install -y python-devel zlib-devel openssl-devel mysql-devel
-
-# http://zeromq.org/distro:centos
-sudo yum install -y zeromq-devel zeromq  # if you need gfirefly.
+sudo yum install -y git python-pip bzip2-devel bzip2-libs \
+    readline readline-devel readline-static \
+    python-devel zlib-devel openssl-devel mysql-devel \
+    # http://zeromq.org/distro:centos
+    zeromq-devel zeromq  # if you need gfirefly.
 
 # gcc
 sudo yum install -y gcc gcc-c++         # C编译器

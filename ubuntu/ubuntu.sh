@@ -3,19 +3,14 @@
 sudo apt-get install git
 
 # conventional component
-cat base_packages.txt | xargs sudo apt-get install -y
-if [ $? != 0 ]
-then
-echo "Error: base_packages.txt not install!"
-exit 1
-fi
-
 # fix scrapy error,then sudo pip install Scrapy.
 # fix IOError: decoder jpeg not available.
-cat python_dev.txt | xargs sudo apt-get install -y
+sudo apt-get install -y openssh-server python-dev python-pip \
+    libffi-dev libssl-dev libmysqlclient-dev \ 
+    libjpeg62-dev zlib1g-dev libfreetype6-dev liblcms2-dev
 if [ $? != 0 ]
 then
-echo "Error: python_dev.txt not install!"
+echo "Error: Python Dev not install!"
 exit 1
 fi
 
@@ -36,21 +31,13 @@ echo "Error: postgres pg_config not fix!"
 exit 1
 fi
 
-# Terminal themes and 256. result eg. $ tput colors $ 8
-sudo apt-get install -y dconf-cli ncurses-term
+sudo pip install --upgrade pip
 
 sudo apt-get install pandoc ess
 sudo apt-get install slime clisp gcl
 ln -s /usr/bin/clisp ~/bin/lisp
 
-# python packages.
-sudo pip install --upgrade pip
-sudo pip install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
-$TEMP_APP=$HOME"/.oh-my-zsh"
-if [ ! -x "$TEMP_APP" ]; then
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-fi
 
 # gem doctor
 if [ -x "`which gem`"]
