@@ -1,9 +1,9 @@
 #/bin/bash
 
 
-# ubuntu python zsh plus dev.
-sudo apt install -y vim git-flow gitk tree kdiff3 tmux curl silversearcher-ag \  
-    byobu tree rar expect tcl whois zsh tmuxinator
+# ubuntu zsh.
+sudo apt install -y vim zsh git-flow gitk tree kdiff3 tmux curl silversearcher-ag \  
+    byobu tree rar expect tcl whois zsh tmuxinator patch
 
 # Terminal themes and 256. result eg. $ tput colors $ 8
 sudo apt-get install -y dconf-cli ncurses-term
@@ -26,4 +26,5 @@ sudo gem sources --remove http://rubygems.org
 sudo gem sources --add https://gems.ruby-china.org/
 gem sources -l
 sudo gem install tmuxinator
+fi
 chsh -s /bin/zsh && echo $0

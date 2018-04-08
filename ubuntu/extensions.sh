@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # apache ab
-sudo apt-get install -y apache2-utils docker-engine
+sudo apt-get install -y apache2-utils
 
 # postgresql client and server.
 # libpq-dev sloved: Error: pg_config executable not found.
@@ -15,3 +15,5 @@ fi
 sudo apt-get install pandoc ess
 sudo apt-get install slime clisp gcl
 ln -s /usr/bin/clisp ~/bin/lisp
+
+
