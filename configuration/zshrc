@@ -101,7 +101,7 @@ setopt EXTENDED_HISTORY
 export PATH=/home/jachin/.cabal/bin:$PATH
 
 # set editor env.
-export EDITOR='ec'
+export EDITOR='vi'
 
 # set project base path.
 PROJECT_PATHS=(~/dev ~/project ~/utils)

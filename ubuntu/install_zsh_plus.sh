@@ -2,8 +2,8 @@
 
 
 # ubuntu zsh.
-sudo apt install -y vim zsh git-flow gitk tree kdiff3 tmux curl silversearcher-ag \  
-    byobu tree rar expect tcl whois zsh tmuxinator patch
+sudo apt install -y zsh vim git-flow gitk tree kdiff3 tmux curl silversearcher-ag \
+    byobu rar expect tcl whois zsh tmuxinator patch
 
 # Terminal themes and 256. result eg. $ tput colors $ 8
 sudo apt-get install -y dconf-cli ncurses-term
