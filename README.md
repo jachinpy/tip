@@ -142,3 +142,22 @@ Tip
     mkdir -p srv/pypi/web/
     mkdir tmp
 
+# Tmux
+    sudo apt install -y tmux
+    sudo gem install tmuxinator
+    tmuxinator doctor
+
+    关闭会话
+    tkss huzhao
+
+    退出会话
+    tmux detach
+
+
+    F2 上一页
+    F3 下一页
+
+    # Tmux2 以上, 开启鼠标支持
+    set -g mouse on
+    复制: 按住shift键,然后拖动鼠标复制要选择的内容，然后按下shift+ctrl+c,复制到系统剪贴板
+    粘贴: 按下shift+ctrl+v 粘贴系统剪贴板中的内容到tmux中
