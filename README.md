@@ -50,6 +50,9 @@ Tip
 
     source ~/utils/tip/init.sh
 
+## security
+    ./security.zsh 扫描系统
+
 
 ##  Commands
   

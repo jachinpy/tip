@@ -17,3 +17,5 @@ alias gcft="git cat-file -t "
 alias gct="git checkout --track "
 alias gsum="_git_shortlog_sum_commit"
 alias gmnf="git merge --no-ff "
+# 统计项目文件大小
+alias gfiles="git ls-files| xargs du | awk '{sum += $1};END {print sum/1024, "M"}'"
