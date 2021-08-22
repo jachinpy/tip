@@ -8,6 +8,6 @@ if [ -f "/usr/bin/virtualenvwrapper.sh" ];then
 fi
 
 export WORKON_HOME=$HOME/.virtualenvs
-VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 

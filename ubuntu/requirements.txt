@@ -7,4 +7,4 @@ ipython==5
 yapf
 python-Levenshtein
 powerline-status==2.3
-flake8
+#flake8

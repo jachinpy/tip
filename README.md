@@ -2,61 +2,70 @@ Tip
 ========
 
 
-##  Support
+##  系统要求
 
-    Ubuntu 14.04 or new
-    Centos
+    Ubuntu 14.04 or new release / CentOS
 
 
-##  step
-    
-    需要提前安装的软件
-    openssh-server   (虚拟机)
-    git
-    vim
+##  教程
 
     mkdir -p ~/utils
     cd ~/utils && git clone https://github.com/jachinpy/tip.git
-    
-    部署环境
-    ./loader.sh (如失效，可分别安装ubuntu.sh,centos.sh)
 
-    如果需要安装到其他目录：
-    cd tip/
-    vim init.sh
-    项目根目录默认：TIP_JACHINPY=$HOME/utils/tip
-    可以设置 export TIP_JACHINPY=/path/
-    source ~/.zshrc
-
-
-##  Install ubuntu packages for pythoner
-    sudo apt-get update
-    ./ubuntu.sh (if no permission, chmod a+x *.sh)
-
-
-##  Install centos packages for pythoner
-    ./centos.sh
-    
-
-##  Install mysql
-    ./centos_mysql.sh
-    ./ubuntu_mysql.sh
-     
-	
-##  Configuration
-    vim ~/.zshrc
-    or
-    vim ~/.bashrc
-
+    vim ~/.bashrc or vim ~/.zshrc
+    TIP_HOME=$HOME/utils/tip
     source ~/utils/tip/init.sh
+    然后
+    source ~/.bashrc
 
-## security
-    ./security.zsh 扫描系统
+
+##  安装任务
+    
+
+    初始化操作系统，安装必备软件
+    cd ubuntu 
+    或者
+    cd centos
+    
+    ./install.sh
+    也可以分别指定
+    ./install_[xxx].sh
 
 
-##  Commands
+### 模块
+    
+    中文环境  
+ 
+    输入法
+
+    文本编辑器 vim pycharm
+
+    开发软件 python mysql postgres 
+
+    办公软件 wechat wps 
+
+    shell 扩展包
+    zsh\ohmyzsh
+
+    扩展包
+    ./extension_kits.sh
+
+
+
+## 系统命令
+ 
+    清理浏览器缓存
+    ./cleaner.sh
+
+    或添加定时任务
+    crontab -e
+    eg. 
+    30 10 * * * bash $HOME/utils/tip/cleaner.sh
+
+
+##  Plugins 功能
   
- + python utils
+ + python
         
         sitep [virutalenv name]
             go to python2.7 site-packages for projects. use sitep command in shell.
@@ -103,8 +112,6 @@ Tip
         将指令装入 .xprofile 中，以便开机执行。
         .xkb 方法不适用于 fcitx 和 ibus 框架。
 
- + qq
-        .plugins/qq/qq.zsh  安装 Linux 版本QQ.
 
  + 数据备份
 
@@ -117,6 +124,7 @@ Tip
 
         uphosts  [file-name]
         更新 hosts 文件
+
 
 ##  Pycharm
     cd configuration
@@ -132,20 +140,12 @@ Tip
 
 ## A few tips
 
-    如何合理创建linux系统？
-    /boot/ /home/  根， 应当最少这几项. 方便系统重度瘫痪后快速修复。
-    方法： 保留家目录，其它分区格式化。
-
-    如何在 linux 中开发？
-    方法： 隔离, 无论使用 virtualenv, docker, 还是虚拟机，都会
-    降低开发风险。
-
     创建开发级别的目录, 使用小写区别于系统默认的大写，使用tmp来区别系统Temp目录。
     cd ~
     mkdir -p srv/pypi/web/
     mkdir tmp
 
-# Tmux
+##  Tmux
     sudo apt install -y tmux
     sudo gem install tmuxinator
     tmuxinator doctor
@@ -164,3 +164,4 @@ Tip
     set -g mouse on
     复制: 按住shift键,然后拖动鼠标复制要选择的内容，然后按下shift+ctrl+c,复制到系统剪贴板
     粘贴: 按下shift+ctrl+v 粘贴系统剪贴板中的内容到tmux中
+
