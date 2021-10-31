@@ -8,27 +8,27 @@ fi
 
 # support feature for array_pc, if you need other plugins, into array_pc.see plugins.
 array_pc=(
-	git
+    git
 	zsh
-        vim
+    vim
 
-        virtualenvwrapper
-        pyenv
-        django
-        python
-        pypi
+    virtualenvwrapper
+    pyenv
+    django
+    python
+    pypi
 
-        markdown
-        byobu
-        scbl
-        #locales
-        360library
-        node
-        tmux
-        tmuxinator
-        #pandoc
-        #nvm
-        )
+    markdown
+    byobu
+    scbl
+    #locales
+    360library
+    node
+    tmux
+    tmuxinator
+    #pandoc
+    #nvm
+    )
 
 
 Loading_plugins () {

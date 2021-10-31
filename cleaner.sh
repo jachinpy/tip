@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# 清理浏览器缓存
 
 
 if [ ! -d "$HOME/.cache/mozilla/firefox/idc1ztgy.default-release/cache2" ]; then
