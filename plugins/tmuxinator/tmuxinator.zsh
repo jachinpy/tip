@@ -21,6 +21,8 @@ _tmuxinator() {
 
 _tmuxinator
 
+alias mux=tmuxinator
+
 # Local Variables:
 # mode: Shell-Script
 # sh-indentation: 2
