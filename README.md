@@ -165,3 +165,12 @@ Tip
     复制: 按住shift键,然后拖动鼠标复制要选择的内容，然后按下shift+ctrl+c,复制到系统剪贴板
     粘贴: 按下shift+ctrl+v 粘贴系统剪贴板中的内容到tmux中
 
+
+## 配置参考地址
+
+    ~
+    /usr/share/application
+    ~/.bin
+    ~/.local
+    ~/.gitconfig
+

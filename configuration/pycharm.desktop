@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Pycharm
+Comment=The development tools for python
+Categories=Development;WebDevelopment;IDE;
+Exec=.../Downloads/pycharm-community-2021.2/bin/pycharm.sh
+Icon=.../Downloads/pycharm-community-2021.2/bin/pycharm.svg
+Type=Application
+Terminal=false
+X-Desktop-File-Install-Version=0.24
+StartupWMClass=jetbrains-pycharm-ce

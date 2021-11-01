@@ -4,6 +4,7 @@
 *.pyc
 *.bak
 *.swp
+*.log
 [#]*[#]
 .#*
 GTAGS
