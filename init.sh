@@ -17,6 +17,7 @@ array_pc=(
     django
     python
     pypi
+    percol
 
     markdown
     byobu
