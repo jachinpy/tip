@@ -13,10 +13,11 @@ array_pc=(
     vim
 
     virtualenvwrapper
-    pyenv
+    # pyenv
     django
     python
     pypi
+    percol
 
     markdown
     byobu
@@ -35,6 +36,20 @@ Loading_plugins () {
     for i in ${array_pc[@]}
     do
         source "$TIP_HOME/plugins/$i/"*.zsh
+    done
+}
+
+
+function generate_random_text(){
+    temp1=`echo $RANDOM|md5sum`
+    printf '%s' {1..500}_$temp1
+}
+
+function secure_delete(){
+    for i in {1..10}
+    do
+        echo `generate_random_text` > $1
+        rm $1
     done
 }
 
