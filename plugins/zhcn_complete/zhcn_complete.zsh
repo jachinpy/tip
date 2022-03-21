@@ -1,13 +1,15 @@
 #!/bin/bash
+#
+#path tracing
+
 
 
 MAXTOP=20
 declare TOP=0 
 declare -a ZNCH_QUEUE
 
-push()
-{
-    if [ -z "$1" ] #若无输入任何参数，立即返回
+push() { 
+    if [ -z "$1" ] #若无输入任何参数，立即返回 
     then
         return
     fi
@@ -20,7 +22,7 @@ push()
             let TOP=$MAXTOP
             ZHCN_QUEUE[$TOP]=$1
             shift
-            return
+            return 
         fi
         let TOP=TOP+1 
         ZHCN_QUEUE[$TOP]=$1 
@@ -40,10 +42,12 @@ echo "TOP=$TOP"
 
 
 # show root dir
-alias rd="show_zhcn"
-# show print file dir
+function ptroot (){
+    show_zhcn | awk '!a[$0]++'
+}
 
-function rp(){
+# show print file dir
+function ptfull(){
     ZHCN_FULLPATH=$(realpath `tree -if -L 1`)
     echo $ZHCN_FULLPATH
 }
@@ -52,8 +56,7 @@ declare -a ZHCN_DIRNAMES
 declare -a ZHCN_DIRROOT
 
 # don't r home.
-
-function r () { 
+function pt () { 
     if [ -n "$1" ]; then 
         cd ${ZHCN_DIRNAMES[$1]}
         return 0
