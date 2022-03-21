@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-MAXTOP=6
+MAXTOP=20
 declare TOP=0 
 declare -a ZNCH_QUEUE
 
@@ -40,7 +40,13 @@ echo "TOP=$TOP"
 
 
 # show root dir
-alias rd=show_zhcn
+alias rd="show_zhcn"
+# show print file dir
+
+function rp(){
+    ZHCN_FULLPATH=$(realpath `tree -if -L 1`)
+    echo $ZHCN_FULLPATH
+}
 
 declare -a ZHCN_DIRNAMES
 declare -a ZHCN_DIRROOT
@@ -54,7 +60,7 @@ function r () {
     else
         push `pwd`
         let i=1
-        for line in $(realpath `tree -id` | sed '$d' | sed '$d')
+        for line in $(realpath `tree -id -L 1` | sed '$d' | sed '$d')
         do
             echo ${i} $line
             ZHCN_DIRNAMES[${i}]=$line
