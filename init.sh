@@ -29,6 +29,7 @@ array_pc=(
     tmuxinator
     #pandoc
     #nvm
+    zhcn_complete
     )
 
 
@@ -52,6 +53,9 @@ function secure_delete(){
         rm $1
     done
 }
+
+# display fullpath
+alias treepath='realpath `tree -if`'
 
 Loading_plugins
 source $TIP_HOME/migrate.sh
