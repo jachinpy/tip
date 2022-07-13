@@ -59,3 +59,6 @@ alias treepath='realpath `tree -if`'
 
 Loading_plugins
 source $TIP_HOME/migrate.sh
+source $TIP_HOME/utilities.sh
+
+alias dropBrowserCache=${TIP_HOME}'/cleaner.sh'

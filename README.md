@@ -52,7 +52,7 @@ Tip
 
 
 
-## 系统命令
+##  命令
  
     清理浏览器缓存
     ./cleaner.sh
@@ -63,6 +63,11 @@ Tip
     30 10 * * * bash $HOME/utils/tip/cleaner.sh
 
 
+    getMachineProfile  获取系统信息
+
+    releaseMemory  释放内存
+
+    dropBrowserCache  清理浏览器缓存
 ##  Plugins 功能
   
  + python

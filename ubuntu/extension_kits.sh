@@ -3,7 +3,7 @@
 
 
 sudo apt install -y git-flow gitk tree kdiff3 \
-    byobu rar expect tcl whois patch
+    byobu rar expect tcl whois patch xsel
 
 
 # 办公软件
