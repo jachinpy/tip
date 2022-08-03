@@ -1,9 +1,5 @@
+" version: vim_plugins_20220803_v1
 set mouse=a
-
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-
 
 
 let g:VimTodoListsUndoneItem = '- [待完成]'
@@ -21,6 +17,12 @@ set tabstop=4           "tab 代表4个空格
 set expandtab           "使用空格替换tab
 set showmatch           "高亮显示匹配的括号
 set hlsearch            "高亮显示搜索结果
+
+" html 2 space
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
+" javascript 2 space
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
+
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -42,8 +44,6 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -70,13 +70,37 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
 let g:markdown_include_jekyll_support = 0
-let g:markdown_enable_folding = 1
+let g:markdown_enable_folding = 0
 let g:markdown_enable_mappings = 0
 let g:markdown_enable_insert_mode_leader_mappings = 1
 let g:markdown_enable_spell_checking = 0
 let g:markdown_enable_input_abbreviations = 0
 let g:markdown_enable_conceal = 1
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_folding_level = 6
+
+
+
+" persistent sessions
+Plugin 'thaerkh/vim-workspace'
+
+let g:workspace_autocreate = 1
+let g:workspace_autosave_always = 1
+nnoremap <leader>s :ToggleWorkspace<CR>
+let g:workspace_session_directory = $HOME . '/.vim/sessions/'
 
 Plugin 'iamcco/markdown-preview.nvim'
 nmap <C-p> <Plug>MarkdownPreviewToggle
 
+" 关闭补全额外的预览窗口
+set completeopt=menuone
+
+
+" pydiction
+filetype plugin on
+let g:pydiction_location = $HOME . '/.vim/bundle/pydiction/complete-dict'
+let g:pydiction_menu_height = 1
+
+" xptemplate
+set nocompatible
+set rtp+=$HOME/.vim/xptemplate
