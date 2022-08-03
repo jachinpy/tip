@@ -89,8 +89,14 @@ let g:workspace_autosave_always = 1
 nnoremap <leader>s :ToggleWorkspace<CR>
 let g:workspace_session_directory = $HOME . '/.vim/sessions/'
 
+" 注意将调用本地浏览器，终端不可用。
 Plugin 'iamcco/markdown-preview.nvim'
+
+" example
+nmap <C-s> <Plug>MarkdownPreview
+nmap <M-s> <Plug>MarkdownPreviewStop
 nmap <C-p> <Plug>MarkdownPreviewToggle
+
 
 " 关闭补全额外的预览窗口
 set completeopt=menuone
@@ -104,3 +110,6 @@ let g:pydiction_menu_height = 1
 " xptemplate
 set nocompatible
 set rtp+=$HOME/.vim/xptemplate
+
+
+

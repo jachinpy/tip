@@ -7,7 +7,7 @@ cmdcount () {
 
 #
 extranet () {
-    curl ifconfig.me
+    echo $(curl ifconfig.me)
 }
 
 

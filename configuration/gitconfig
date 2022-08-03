@@ -1,3 +1,6 @@
+[user]
+	name =
+	email =
 [alias]
 	st = status
 	br = branch
@@ -8,6 +11,8 @@
 	last = cat-file commit HEAD
 [core]
 	editor = vim
+    whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
+    quotepath = false
 
 [merge]
 	tool = kdiff3
@@ -18,3 +23,10 @@
 	tool=vimdiff
 [difftool]
         prompt = false
+
+[oh-my-zsh]
+    hide-dirty = 1
+
+[credential]
+    helper = store
+

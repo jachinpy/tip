@@ -2,12 +2,12 @@ Tip
 ========
 
 
-##  系统要求
+##  系统要求 Required
 
     Ubuntu 14.04 or new release / CentOS
 
 
-##  教程
+##  安装 Install
 
     mkdir -p ~/utils
     cd ~/utils && git clone https://github.com/jachinpy/tip.git
@@ -15,15 +15,13 @@ Tip
     vim ~/.bashrc or vim ~/.zshrc
     TIP_HOME=$HOME/utils/tip
     source ~/utils/tip/init.sh
-    然后
-    source ~/.bashrc
+    source ~/.bashrc or source ~/.zshrc
 
 
-##  安装任务
-    
+##  初始化任务 Init Task
 
     初始化操作系统，安装必备软件
-    cd ubuntu 
+    cd ubuntu
     或者
     cd centos
     
@@ -32,10 +30,10 @@ Tip
     ./install_[xxx].sh
 
 
-### 模块
+### 模块 Module
     
     中文环境  
- 
+
     输入法
 
     文本编辑器 vim pycharm
@@ -52,7 +50,7 @@ Tip
 
 
 
-##  命令
+##  命令 Commands
  
     清理浏览器缓存
     ./cleaner.sh
@@ -68,8 +66,11 @@ Tip
     releaseMemory  释放内存
 
     dropBrowserCache  清理浏览器缓存
-##  Plugins 功能
-  
+
+##  插件 Plugins
+
+    包含一些命令、脚本等。
+
  + python
         
         sitep [virutalenv name]
@@ -80,21 +81,21 @@ Tip
             simple server 9090 tcp. 简单的服务器.可以用来传输文件.
  + django
 
-        jr 运行 runserver
-        jt 运行 test
-        jd 运行 dbshell
-        jsy 运行 syncdb 
-        jsp 运行  shell_plus
+        jr  =>  runserver
+        jt  =>  test
+        jd  =>  dbshell
+        jsy =>  syncdb
+        jsp =>  shell_plus
 
  + git 
 
-        gh   - git hist 
-        ghh  - git hist -max-count=1
-        gfp  - git fetch -p
-        gffs - git flow feature start $1
-        gcfp - git cat-file -p 
-        gcft - git cat-file -t
-        gcto - git checkout --track origin $1
+        gh   => git hist
+        ghh  => git hist -max-count=1
+        gfp  => git fetch -p
+        gffs => git flow feature start $1
+        gcfp => git cat-file -p 
+        gcft => git cat-file -t
+        gcto => git checkout --track origin $1
 
  + network
 
@@ -143,13 +144,6 @@ Tip
     cp configuration/ipython/start.py ~/.ipython/profile_default/startup/start.py
 
 
-## A few tips
-
-    创建开发级别的目录, 使用小写区别于系统默认的大写，使用tmp来区别系统Temp目录。
-    cd ~
-    mkdir -p srv/pypi/web/
-    mkdir tmp
-
 ##  Tmux
     sudo apt install -y tmux
     sudo gem install tmuxinator
@@ -171,15 +165,16 @@ Tip
     粘贴: 按下shift+ctrl+v 粘贴系统剪贴板中的内容到tmux中
 
 
-## 配置参考地址
+## 配置 Configuration
 
-    ~
-    /usr/share/application
-    ~/.bin
-    ~/.local
-    ~/.gitconfig
+    完整配置在 configuration/
+    cp vimrc ~/.virmc # 对应版本.vim 包
+    cp gitconfig ~/.gitconfig
 
-## 扩展
-    
-    安装 vundle
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+## A few tips
+
+    创建开发级别的目录, 使用小写区别于系统默认的大写，使用tmp来区别系统Temp目录。
+    cd ~
+    mkdir -p srv/pypi/web/
+    mkdir tmp
