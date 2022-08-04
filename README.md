@@ -18,16 +18,14 @@ Tip
     source ~/.bashrc or source ~/.zshrc
 
 
-##  初始化任务 Init Task
+##  初始化安装任务 Init Installer
 
     初始化操作系统，安装必备软件
-    cd ubuntu
+    cd installer/ubuntu
     或者
-    cd centos
+    cd installer/centos
     
-    ./install.sh
-    也可以分别指定
-    ./install_[xxx].sh
+    ./install.sh 也可以分别指定 ./install_[xxx].sh
 
 
 ### 模块 Module
@@ -52,22 +50,18 @@ Tip
 
 ##  工具 Tools (Command Script etc.)
  
-    清理浏览器缓存
-    cleaner.sh
-
+    dropBrowserCache  清理浏览器缓存
     或添加定时任务
     crontab -e
     e.g.
-    30 10 * * * bash $HOME/utils/tip/cleaner.sh
+    30 10 * * * bash $HOME/utils/tip/tools/browserCleaner.sh
 
-    python
-    ptags
+    /path/ptags.py
 
     getMachineProfile  获取系统信息
 
     releaseMemory  释放内存
 
-    dropBrowserCache  清理浏览器缓存
 
 ##  插件 Plugins
 
