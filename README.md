@@ -50,16 +50,18 @@ Tip
 
 
 
-##  命令 Commands
+##  工具 Tools (Command Script etc.)
  
     清理浏览器缓存
-    ./cleaner.sh
+    cleaner.sh
 
     或添加定时任务
     crontab -e
-    eg. 
+    e.g.
     30 10 * * * bash $HOME/utils/tip/cleaner.sh
 
+    python
+    ptags
 
     getMachineProfile  获取系统信息
 

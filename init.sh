@@ -41,7 +41,7 @@ Loading_plugins () {
 }
 
 
-function generate_random_text(){
+function generateRandom(){
     temp1=`echo $RANDOM|md5sum`
     printf '%s' {1..500}_$temp1
 }
@@ -58,7 +58,7 @@ function secure_delete(){
 alias treepath='realpath `tree -if`'
 
 Loading_plugins
-source $TIP_HOME/migrate.sh
-source $TIP_HOME/utilities.sh
+source $TIP_HOME/tools/manager.sh
+source $TIP_HOME/tools/utilities.sh
 
-alias dropBrowserCache=${TIP_HOME}'/cleaner.sh'
+alias dropBrowserCache=${TIP_HOME}'/tools/browserCleaner.sh'
