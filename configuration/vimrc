@@ -80,6 +80,22 @@ let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_folding_level = 6
 
 
+" code check
+Plugin 'dense-analysis/ale'
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'html': ['vscodehtml'],
+\   'css': ['stylelint'],
+\   'vue': ['eslint', 'vls'],
+\   'python': ['pylint']
+\}
+" In ~/.vim/vimrc, or somewhere similar.
+let g:ale_linter_aliases = {'vue': ['vue', 'javascript']}
+"let g:ale_sign_column_always = 1
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+
+
 
 " persistent sessions
 Plugin 'thaerkh/vim-workspace'
@@ -111,5 +127,8 @@ let g:pydiction_menu_height = 1
 set nocompatible
 set rtp+=$HOME/.vim/xptemplate
 
+
+"python
+set tags+=tags
 
 
