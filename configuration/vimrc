@@ -100,7 +100,7 @@ let g:ale_sign_warning = '--'
 " persistent sessions
 Plugin 'thaerkh/vim-workspace'
 
-let g:workspace_autocreate = 1
+let g:workspace_autocreate = 0
 let g:workspace_autosave_always = 1
 nnoremap <leader>s :ToggleWorkspace<CR>
 let g:workspace_session_directory = $HOME . '/.vim/sessions/'
@@ -132,3 +132,5 @@ set rtp+=$HOME/.vim/xptemplate
 set tags+=tags
 
 
+"preview local files
+nmap <C-p><C-p> :exec '!exec google-chrome %'<CR>
