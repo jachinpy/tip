@@ -134,3 +134,7 @@ set tags+=tags
 
 "preview local files
 nmap <C-p><C-p> :exec '!exec google-chrome %'<CR>
+
+" https://github.com/jlanzarotta/bufexplorer
+Plugin 'jlanzarotta/bufexplorer'
+
