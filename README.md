@@ -62,6 +62,8 @@ Tip
 
     releaseMemory  释放内存
 
+    fix_git_email.sh 拷贝出去，替换变量
+
 
 ##  插件 Plugins
 
