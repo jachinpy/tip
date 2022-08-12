@@ -11,3 +11,8 @@ sitep () {
         cd $VIRTUAL_ENV/lib/python2.7/site-packages
     fi
 }
+
+
+ptags (){
+    find  . -name \*.py -print | xargs ~/utils/tip/tools/python/ptags.py
+}

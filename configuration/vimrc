@@ -1,9 +1,16 @@
 " version: vim_plugins_20220803_v1
 set mouse=a
 
+" 状态栏
+set statusline=%F%=行:%l\ 列:%c\ \ %p%%,%L\ \ 缓:%n\ %r\ %m
+set ls=2
 
-let g:VimTodoListsUndoneItem = '- [待完成]'
-let g:VimTodoListsDoneItem = '- [已完成]'
+"代码行数
+set nu
+
+"复制到系统粘贴板
+" can use "+y
+set clipboard=unnamedplus
 
 filetype indent on
 set ruler               "打开状态栏标尺
@@ -18,11 +25,14 @@ set expandtab           "使用空格替换tab
 set showmatch           "高亮显示匹配的括号
 set hlsearch            "高亮显示搜索结果
 
+
+let g:VimTodoListsUndoneItem = '- [待完成]'
+let g:VimTodoListsDoneItem = '- [已完成]'
+
 " html 2 space
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
 " javascript 2 space
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
-
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -66,8 +76,21 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
+
+" NERDTree
+call vundle#begin()
+  Plugin 'preservim/nerdtree'
+call vundle#end()
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+
 
 let g:markdown_include_jekyll_support = 0
 let g:markdown_enable_folding = 0
@@ -78,7 +101,6 @@ let g:markdown_enable_input_abbreviations = 0
 let g:markdown_enable_conceal = 1
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_folding_level = 6
-
 
 " code check
 Plugin 'dense-analysis/ale'
@@ -94,7 +116,6 @@ let g:ale_linter_aliases = {'vue': ['vue', 'javascript']}
 "let g:ale_sign_column_always = 1
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
-
 
 
 " persistent sessions
@@ -113,10 +134,8 @@ nmap <C-s> <Plug>MarkdownPreview
 nmap <M-s> <Plug>MarkdownPreviewStop
 nmap <C-p> <Plug>MarkdownPreviewToggle
 
-
 " 关闭补全额外的预览窗口
 set completeopt=menuone
-
 
 " pydiction
 filetype plugin on
@@ -127,17 +146,11 @@ let g:pydiction_menu_height = 1
 set nocompatible
 set rtp+=$HOME/.vim/xptemplate
 
-
 "python
 set tags+=tags
 
-
 "preview local files
 nmap <C-p><C-p> :exec '!exec google-chrome %'<CR>
-
-
-set statusline+=%F
-set ls=2
 
 "https://github.com/jlanzarotta/bufexplorer
 Plugin 'jlanzarotta/bufexplorer'
