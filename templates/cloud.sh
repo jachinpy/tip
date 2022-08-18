@@ -43,6 +43,7 @@ npull(){
     cp -r $TIP_DAV_LOCAL_DATA_DIR $TIP_DAV_TEMP_DIR/notes-$time
     cd $TIP_DAV_TEMP_DIR
     zip -r notes-$time.zip notes-$time/
+    rm $TIP_DAV_TEMP_DIR/notes-$time -rf
 
     # extract not overwrite
     unzip -n -d $TIP_DAV_LOCAL_DATA_DIR $TIP_DAV_TEMP_DIR/notes-latest.zip
