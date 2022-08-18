@@ -163,12 +163,17 @@ Tip
     粘贴: 按下shift+ctrl+v 粘贴系统剪贴板中的内容到tmux中
 
 
-## 配置 Configuration
+
+
+## 模板 Templates
+    
+    记录一些常用的工具、配置等。
+
+#### 配置 Configuration
 
     完整配置在 configuration/
     cp vimrc ~/.virmc # 对应版本.vim 包
     cp gitconfig ~/.gitconfig
-
 
 ## A few tips
 
