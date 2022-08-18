@@ -1,7 +1,11 @@
 #!/bin/bash
 # curl download or upload dav files.
 # current compress: zip
+# linux: 
+#      mkdir ~/bin/
+#      cp /tip-path/tools/cloud.sh ~/bin/
 # windows needs: git-bash zip unzip, or other unix-like.
+
 
 readonly TIP_DAV_UESR=
 readonly TIP_DAV_PASSWORD=
