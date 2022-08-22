@@ -5,6 +5,7 @@
 #      mkdir ~/bin/
 #      cp /tip-path/tools/cloud.sh ~/bin/
 # windows needs: git-bash zip unzip, or other unix-like.
+set -ue
 
 
 readonly TIP_DAV_UESR=
@@ -22,10 +23,10 @@ TIP_UPLOADS=
 
 
 
-
 download_file(){
     mkdir -p $TIP_DAV_TEMP_DIR
     curl -k -u $TIP_DAV_UESR:$TIP_DAV_PASSWORD  $TIP_DAV_REMOTE_URL/$1 --output $TIP_DAV_TEMP_DIR/$1
+    echo '下载完成'
 }
 
 upload_file() {
@@ -65,3 +66,4 @@ npush() {
     rm $TIP_UPLOADS/notes -rf
     cd $pwd
 }
+set +ue
