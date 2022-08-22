@@ -9,10 +9,9 @@ set ls=2
 set nu
 
 "复制到系统粘贴板
-" can use "+y
 set clipboard=unnamedplus
 
-filetype indent on
+filetype indent on 
 set ruler               "打开状态栏标尺
 syntax on               "自动语法高亮
 " add tab space
@@ -125,6 +124,8 @@ let g:workspace_autocreate = 0
 let g:workspace_autosave_always = 1
 nnoremap <leader>s :ToggleWorkspace<CR>
 let g:workspace_session_directory = $HOME . '/.vim/sessions/'
+let g:workspace_persist_undo_history = 1  " enabled = 1 (default), disabled = 0
+let g:workspace_undodir=$HOME . "/.undodir"
 
 " 注意将调用本地浏览器，终端不可用。
 Plugin 'iamcco/markdown-preview.nvim'
