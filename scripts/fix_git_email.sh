@@ -1,4 +1,7 @@
 #!/bin/sh
+# touch ~/path/fix_git_email.sh
+# and then cp command.
+
 git filter-branch --env-filter '
 OLD_EMAIL=""
 CORRECT_NAME=""
