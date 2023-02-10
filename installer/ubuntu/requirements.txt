@@ -3,7 +3,7 @@ virtualenvwrapper
 percol
 rash
 # ipython6(python3.x) ipthon5.x(python2.x)
-ipython==7.16.3
+ipython==8.10.0
 yapf
 python-Levenshtein
 powerline-status==2.3
